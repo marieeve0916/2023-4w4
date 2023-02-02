@@ -3,5 +3,10 @@
 }
 
 .site__titre h1 {
+    color: black;
     font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
+}
+
+.site__desc {
+    color: rgb(120, 120, 120);
 }

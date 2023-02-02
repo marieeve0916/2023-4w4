@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4w4</title>
     <a class="site__titre" href="<?= bloginfo('url'); ?>">
-    <h1><?= bloginfo('name'); ?></h1></a>
-    <h2><?= bloginfo('description'); ?></h2>
+    <h1 class="site__info"><?= bloginfo('name'); ?></h1></a>
+    <h2 class="site__desc"><?= bloginfo('description'); ?></h2>
     <?php wp_head() ?>
 </head>
 <body>
