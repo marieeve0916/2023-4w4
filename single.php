@@ -1,16 +1,15 @@
 <?php
-// index.php est le modèle par défaut du thème 4w4
-    get_header() 
+// single.php est le modèle par defaut qui affiche un article
+get_header() 
 ?>
 <main>
-    <pre>front-page.php</pre>
+    <pre>single.php</pre>
     <h1>Bienvenue sur 4w4</h1>
     <?php if(have_posts()):
         while(have_posts()): the_post(); ?>
         <article>
-            <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
-            <?php the_excerpt(); ?>
-            <?php the_permalink(); ?>
+            <h3><?php the_title(); ?></h3>
+            <?php the_content(); ?>
         </article> 
         <hr>
         <?php endwhile; ?>
