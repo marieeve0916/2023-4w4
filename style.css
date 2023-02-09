@@ -430,3 +430,13 @@ pre {
 .logo__site {
   position: relative;
 }
+
+.menu__site {
+  width: 100vw;
+  height: 3rem;
+  background-color: #EED8C8;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
