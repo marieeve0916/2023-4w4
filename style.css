@@ -397,7 +397,11 @@ pre {
   justify-content: flex-end;
 }
 .menu__entete .menu .menu-item a {
-  padding: 3px 5px;
+  padding: 2rem;
+  color: #6c4485;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 
 .site__entete__haut {
@@ -439,4 +443,17 @@ pre {
   justify-content: space-around;
   font-size: 1.2rem;
   text-decoration: none;
+}
+
+article {
+  padding: 3rem;
+  background-color: #f5eafb;
+  width: 90vw;
+  margin: 2rem auto;
+}
+
+.titre__main {
+  font-size: 3rem;
+  padding: 1rem;
+  margin: 0 auto;
 }
