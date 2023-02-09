@@ -10,3 +10,22 @@
 .site__desc {
     color: rgb(120, 120, 120);
 }
+
+/* ///////////////////////////////// menu__entete */
+.menu__entete{ // nav
+
+    .menu { // ul
+            display : flex;
+            list-style-type: none;
+            justify-content: flex-end;
+        .menu-item { // li
+
+            a{
+                padding : 3px 5px;
+            }
+
+        }
+
+    }
+
+}

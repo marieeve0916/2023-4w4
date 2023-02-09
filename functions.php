@@ -8,4 +8,22 @@ wp_enqueue_style('main-styles', //identificateur
                 'all'); //media
 }
 add_action('wp_enqueue_scripts', 'enfiler_css');
+
+/* -------------------------------------- Enregitrement des menus */
+function enregistre_menus(){
+    register_nav_menus( array(
+    'menu_entete' => 'Menu entete',
+    'menu_sidebar'  => 'Menu sidebar',
+    ) );
+}
+add_action( 'after_setup_theme', 'enregistre_menus', 0 );
+
+/* -------------------------------------- add_theme_suport */
+
+add_theme_support( 'title-tag' );
+add_theme_support( 'custom-logo', array(
+'height' => 150,
+'width'  => 150
+) );
+
 ?>
