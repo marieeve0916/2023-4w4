@@ -1,17 +1,13 @@
-# Laboratoire #1
+# Laboratoire #3
 ## 4w4 - Conception d'interfaces et développement web
 ### Auteur: Marie-Ève Pelletier
 
 #### Objectifs
-- Installer WordPress localement 
-- Réaliser une première version d'un thème 
+- Améliorer la page d'accueil avec les flexbox
+- Réaliser le formatage des articles markdown
 
 #### Liens de référence
-- Site du prof sur SiteGround
-    - https://eddytuto.sg-host.com/
-- GitHub du prof
-    - https://github.com/eddytuto 
-    - https://fr.wordpress.org/
-- Pour visualiser sur VSCode, installer l'extension "Markdown Preview Enhanced­"
-    - Pour activer: `ctrl-shift-v`
-    - https://developer.wordpress.org/themes/
+- Site sur SiteGround
+    - https://cidweb38.sg-host.com/
+- GitHub
+    - https://github.com/marieeve0916
