@@ -19,6 +19,7 @@ Text Domain: 4w4-MarieEve-Pelletier
 
 /* ---------------------------------------------- base */
 @import "base/heading";
+@import "base/markdown";
 //@import "base/espacement";
 //@import "base/lien";
 //@import "base/list";
@@ -26,3 +27,4 @@ Text Domain: 4w4-MarieEve-Pelletier
 /* --------------------------------------------- composant */
 @import "composant/entete";
 @import "composant/main";
+@import "composant/blocflex";

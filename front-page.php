@@ -5,17 +5,17 @@
 <main>
     <pre>front-page.php</pre>
     <h1 class="titre__main">Bienvenue sur 4w4</h1>
-    <?php if(have_posts()):
-        while(have_posts()): the_post(); ?>
-        <article>
-            <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
-            <?php the_excerpt(); ?>
-            <?php the_permalink(); ?>
-        </article> 
-        <hr>
-        <?php endwhile; ?>
-        <?php endif; ?>
-    
+        <section class="blocflex">
+            <?php if(have_posts()):
+                while (have_posts()): the_post(); ?>
+                <article>
+                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                    <?php // get_the_excerpt() ?>
+                    <?= wp_trim_words(get_the_excerpt(), 10, " ... "); ?>
+                </article>
+                <?php endwhile; ?>
+            <?php  endif; ?>
+        </section>
 </main>
 <?php get_footer() ?>
 </body>
