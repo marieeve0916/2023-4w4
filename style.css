@@ -371,6 +371,28 @@ p {
   font-family: "Times New Roman", Times, serif;
 }
 
+ul,
+ol {
+  margin: 1rem 0rem;
+  padding: 8px;
+}
+@media screen and (min-width: 700px) {
+  ul,
+ol {
+    margin: 1rem 0.5rem;
+    padding: 6px;
+  }
+}
+
+ul {
+  list-style-type: circle;
+}
+
+ul li,
+ol li {
+  margin: 0.5rem 0rem;
+}
+
 pre {
   background-color: #555;
   color: #eee;
