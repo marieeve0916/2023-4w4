@@ -16,6 +16,10 @@ pre {
     display: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* ///////////////////////////////// menu__entete */
 .menu__entete{ // nav
 
@@ -33,6 +37,13 @@ pre {
                 text-align: center;
             }
 
+        }
+
+        .menu-item::before {
+            background: transparent;
+            border-radius: 0rem;
+            padding-inline: 0rem;
+            margin-inline-end: 0rem; 
         }
 
     }

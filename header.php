@@ -18,6 +18,7 @@
                 <h1><a class="site__titre" href="<?= bloginfo("url"); ?>"><?= bloginfo("name"); ?></a></h1>
                 <h2 class="site__desc"><?= bloginfo("description"); ?></h2>
             </div>
+            <?php get_search_form(); ?>
             <div class="logo__site">
                 <?php the_custom_logo(); ?> 
             </div>

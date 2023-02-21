@@ -1,16 +1,35 @@
 ul,
 ol {
-    margin: 1rem 0rem;
-    padding: 8px;
-    @media screen and (min-width:700px) {
-        margin: 1rem 0.5rem;  
-        padding: 6px;
+    margin : 0rem 0rem;
+    padding : 7px;
+    color : #444;
+    list-style-type : none;
+    @media screen and (min-width: 400px) {
+        margin : 1rem .5rem; 
+        padding : 0 13px;
+      }
+    @media screen and (min-width: 700px) {
+        margin : 1rem .5rem; 
+        padding : 0 15px;
     }
 }
 
 ul {
-    list-style-type: circle;
+    
 }
+
+ul   li::before {
+    content: "-";
+    background: rgb(136, 91, 163);
+    border-radius: 100px;
+    padding-inline: .3rem;
+    margin-inline-end: .3rem;
+      }
+      ul li li::before
+      {
+        background: transparent;
+      }
+
 
 ul li, 
 ol li {
@@ -27,6 +46,8 @@ pre {
     overflow-x: scroll;
 }
 code {}
+
+blockquote {}
 
 strong{}
 
