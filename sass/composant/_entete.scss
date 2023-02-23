@@ -31,10 +31,13 @@ a {
 
             a{
                 padding : 2rem;
+                padding-left: 5rem;
                 color: #6c4485;
                 text-decoration: none;
                 font-family: Arial, Helvetica, sans-serif;
                 text-align: center;
+                text-transform: uppercase;
+                font-weight: bold;
             }
 
         }
@@ -51,12 +54,13 @@ a {
 }
 
 .site__entete__haut {
-    height: 10rem;
+    height: 9.2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #946EAB;
+    background-color: #EED8C8;
     justify-content: space-between;
+    align-items: center;
 }
 
 .site__entete__textes {
@@ -82,11 +86,14 @@ a {
 }
 
 .menu__site {
-    width: 100vw;
+    width: 30rem;
     height: 3rem;
-    background-color: #EED8C8;
     display: flex;
     justify-content: space-around;
     font-size: 1.2rem;
     text-decoration: none;
+}
+
+.barre__recherche {
+    padding: 8rem;
 }

@@ -14,22 +14,24 @@
 <body>
     <header class="site__entete">
         <div class="site__entete__haut">
-            <div class="site__entete__textes">
+            <!-- <div class="site__entete__textes">
                 <h1><a class="site__titre" href="<?= bloginfo("url"); ?>"><?= bloginfo("name"); ?></a></h1>
                 <h2 class="site__desc"><?= bloginfo("description"); ?></h2>
-            </div>
-            <?php get_search_form(); ?>
+            </div> -->
             <div class="logo__site">
                 <?php the_custom_logo(); ?> 
             </div>
-        </div>
-        <div class="menu__site">
-            <?php  wp_nav_menu(array( 
-                        "menu" => "entete",
-                        "container" => "nav",
-                        "container_class" => "menu__entete"
-                    )); 
-            ?>
+            <div class="menu__site">
+                <?php  wp_nav_menu(array( 
+                            "menu" => "entete",
+                            "container" => "nav",
+                            "container_class" => "menu__entete"
+                        )); 
+                ?>
+            </div>
+            <div class="barre__recherche">
+                <?php get_search_form(); ?>
+            </div>
         </div>
     </header>
     

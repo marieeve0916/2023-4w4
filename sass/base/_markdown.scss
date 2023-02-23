@@ -19,7 +19,7 @@ ul {
 }
 
 ul   li::before {
-    content: "-";
+    content: " ";
     background: rgb(136, 91, 163);
     border-radius: 100px;
     padding-inline: .3rem;

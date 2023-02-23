@@ -394,7 +394,7 @@ ol {
 }
 
 ul li::before {
-  content: "-";
+  content: " ";
   background: rgb(136, 91, 163);
   border-radius: 100px;
   padding-inline: 0.3rem;
@@ -447,10 +447,13 @@ a {
 }
 .menu__entete .menu .menu-item a {
   padding: 2rem;
+  padding-left: 5rem;
   color: #6c4485;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .menu__entete .menu .menu-item::before {
   background: transparent;
@@ -460,12 +463,13 @@ a {
 }
 
 .site__entete__haut {
-  height: 10rem;
+  height: 9.2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: #946EAB;
+  background-color: #EED8C8;
   justify-content: space-between;
+  align-items: center;
 }
 
 .site__entete__textes {
@@ -491,13 +495,16 @@ a {
 }
 
 .menu__site {
-  width: 100vw;
+  width: 30rem;
   height: 3rem;
-  background-color: #EED8C8;
   display: flex;
   justify-content: space-around;
   font-size: 1.2rem;
   text-decoration: none;
+}
+
+.barre__recherche {
+  padding: 8rem;
 }
 
 article {
@@ -506,6 +513,7 @@ article {
   width: 90vw;
   margin: 2rem auto;
   border-radius: 20px;
+  box-shadow: 1px 1px 10px;
 }
 
 .titre__main {
