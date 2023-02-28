@@ -2,7 +2,7 @@
 // index.php est le modèle par défaut du thème 4w4
     get_header() 
 ?>
-<main>
+<main class="site__main">
     <pre>front-page.php</pre>
     <h1 class="titre__main">Bienvenue sur 4w4</h1>
         <section class="blocflex">

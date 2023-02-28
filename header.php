@@ -11,7 +11,7 @@
     <?php wp_head() ?>
 </head>
 <body>
-<body>
+<body class="site">
     <header class="site__entete">
         <div class="site__entete__haut">
             <!-- <div class="site__entete__textes">
@@ -34,4 +34,22 @@
             </div>
         </div>
     </header>
+    <aside class="site__aside">
+        <h3>Notes</h3>
+        <?php  
+            $category = get_queried_object();
+            if (isset($category)) {
+                $menu = $category->slug;
+            }
+            else {
+                $menu = "4w4";
+            }
+            
+            echo $menu;
+            wp_nav_menu(array( 
+                    "menu" => $menu,
+                    "container" => "nav",
+                )); 
+        ?>
+    </aside>
     
