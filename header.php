@@ -11,7 +11,7 @@
     <?php wp_head() ?>
 </head>
 <body>
-<body class="site">
+<body class="site <?php echo(is_front_page() ? "no__aside" : "");?>" >
     <header class="site__entete">
         <div class="site__entete__haut">
             <!-- <div class="site__entete__textes">
@@ -34,22 +34,8 @@
             </div>
         </div>
     </header>
-    <aside class="site__aside">
-        <h3>Notes</h3>
-        <?php  
-            $category = get_queried_object();
-            if (isset($category)) {
-                $menu = $category->slug;
-            }
-            else {
-                $menu = "4w4";
-            }
-            // $menu peut prendre les valeurs "4w4" ou "cours"
-            echo $menu;
-            wp_nav_menu(array( 
-                    "menu" => $menu,
-                    "container" => "nav",
-                )); 
-        ?>
-    </aside>
+   <?php 
+   if (! is_front_page()) {
+   get_template_part("template-parts/aside");
+   } ?>
     
