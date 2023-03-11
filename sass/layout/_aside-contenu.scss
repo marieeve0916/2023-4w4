@@ -46,6 +46,7 @@
       "main"
       "footer";
     row-gap: 50px;
+
     @media screen and (min-width: $largeur__bureau) {
         grid-template-columns:auto;
         grid-template-areas:
