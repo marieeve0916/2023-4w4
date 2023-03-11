@@ -566,3 +566,16 @@ article {
   grid-area: footer;
   background-color: antiquewhite;
 }
+
+.no__aside {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "header" "main" "footer";
+  row-gap: 50px;
+}
+@media screen and (min-width: 1000px) {
+  .no__aside {
+    grid-template-columns: auto;
+    grid-template-areas: "header header" "main main" "footer footer";
+  }
+}

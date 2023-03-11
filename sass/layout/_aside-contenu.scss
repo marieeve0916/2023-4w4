@@ -34,6 +34,23 @@
     background-color: antiquewhite;
 }
 
-.site__aside{
+// .site__aside{
     
+// }
+
+.no__aside {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    row-gap: 50px;
+    @media screen and (min-width: $largeur__bureau) {
+        grid-template-columns:auto;
+        grid-template-areas:
+          "header header"
+          "main main"
+          "footer footer";
+    }
 }
