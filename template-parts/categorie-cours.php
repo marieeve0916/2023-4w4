@@ -6,7 +6,7 @@
     $titre = get_the_title();
     $sigle = substr($titre, 0, 7);
     $titre__long = substr($titre, 7, -5);
-    $duree = "90h";
+    $duree = substr($titre, -6);
 ?>
 
 

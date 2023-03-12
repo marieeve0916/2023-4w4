@@ -532,7 +532,6 @@ article {
   flex: 1 0 250px;
   padding: 5px;
   margin: 10px;
-  border: 1px solid #aaa;
 }
 
 .blocflex__galerie {
@@ -565,6 +564,11 @@ article {
 .site__footer {
   grid-area: footer;
   background-color: antiquewhite;
+}
+
+.site__aside {
+  grid-area: aside;
+  background-color: rgb(139, 228, 173);
 }
 
 .no__aside {

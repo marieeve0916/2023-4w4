@@ -34,9 +34,11 @@
     background-color: antiquewhite;
 }
 
-// .site__aside{
-    
-// }
+.site__aside{
+    grid-area: aside;
+    // padding: 1rem clamp(1rem, 3vw, 20rem);
+    background-color: rgb(139, 228, 173);
+}
 
 .no__aside {
     display: grid;
