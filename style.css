@@ -417,20 +417,6 @@ pre {
 }
 
 /* --------------------------------------------- composant */
-.site__titre {
-  text-decoration: none;
-  color: rgb(245, 245, 245);
-}
-
-.site__titre h1 {
-  color: rgb(245, 245, 245);
-  font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
-}
-
-.site__desc {
-  color: #d6b5ea;
-}
-
 pre {
   display: none;
 }
@@ -444,6 +430,16 @@ a {
   display: flex;
   list-style-type: none;
   justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+@media screen and (min-width: 500px) {
+  .menu__entete .menu {
+    position: static;
+    top: auto;
+    right: auto;
+    flex-direction: row;
+    transform: translateX(0);
+  }
 }
 .menu__entete .menu .menu-item a {
   padding: 2rem;
@@ -472,24 +468,6 @@ a {
   align-items: center;
 }
 
-.site__entete__textes {
-  display: flex;
-  flex-direction: column;
-  margin-left: 2rem;
-}
-
-.site__entete__textes h1 {
-  position: relative;
-  top: -0.6rem;
-  font-size: 3rem;
-}
-
-.site__entete__textes h2 {
-  position: relative;
-  top: -3rem;
-  font-size: 1.5rem;
-}
-
 .logo__site {
   position: relative;
 }
@@ -504,22 +482,39 @@ a {
 }
 
 .barre__recherche {
-  padding: 8rem;
+  padding: 0.2rem;
+}
+
+.header__cote__droit {
+  display: flex;
+  flex-direction: row;
 }
 
 article {
   padding: 3rem;
-  background-color: #f5eafb;
+  background-color: #EED8C8;
   width: 90vw;
   margin: 2rem auto;
-  border-radius: 20px;
-  box-shadow: 1px 1px 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(143, 101, 73, 0.5098039216);
+}
+
+article a {
+  color: #663187;
+  font-size: 1.2rem;
+}
+
+article p {
+  color: rgb(9, 10, 35);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .titre__main {
-  font-size: 3rem;
-  padding: 1rem;
-  margin: 3rem auto;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .blocflex {
@@ -535,7 +530,9 @@ article {
 }
 
 .blocflex__galerie {
-  flex: 1 0 100%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
 }
 
 .site {
@@ -577,7 +574,7 @@ article {
   grid-template-areas: "header" "main" "footer";
   row-gap: 50px;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 992px) {
   .no__aside {
     grid-template-columns: auto;
     grid-template-areas: "header header" "main main" "footer footer";

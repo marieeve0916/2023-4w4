@@ -12,5 +12,7 @@
 }
 
 .blocflex__galerie {
-    flex: 1 0 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
 }
