@@ -6,8 +6,12 @@ wp_enqueue_style('main-styles', //identificateur
                 array(), // définir les dépendances
                 fileatime(get_template_directory() . '/style.css'), //le calcul de la version du fichier css
                 'all'); //media
+                //Changer la police
+                wp_enqueue_style("google_font",
+                "https://fonts.googleapis.com/css2?family=Lato&display=swap",
+                false);    
 }
-add_action('wp_enqueue_scripts', 'enfiler_css');
+add_action('wp_enqueue_scripts', 'enfiler_css');   
 
 /* -------------------------------------- Enregitrement des menus */
 function enregistre_menus(){
@@ -25,6 +29,7 @@ add_theme_support( 'custom-logo', array(
 'height' => 150,
 'width'  => 150
 ));
+add_theme_support('custom-background');
 
 /**
  * Modifie la requete principale de Wordpress avant qu'elle soit exécuté
@@ -57,7 +62,11 @@ function cidweb_modifie_requete_principal( $query ) {
     if($args->menu == 'cours') {
     // Modifier la longueur du titre en fonction de vos besoins
     // À modifier/améliorer pour TP1
-    $title = wp_trim_words($title, 3, ' ... ');
+
+    // MODIFIER ICI LES P
+    $sigle = substr($title,4,3);
+    $title = substr($title, 7);
+    $title = "<code>" .$sigle. "</code>" . "<p>" . wp_trim_words($title, 3, ' ... ') . "</p>" ; 
     }
     return $title;
     }

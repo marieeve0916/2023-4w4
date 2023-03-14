@@ -427,29 +427,39 @@ a {
 
 /* ///////////////////////////////// menu__entete */
 .menu__entete .menu {
+  width: 20rem;
   display: flex;
   list-style-type: none;
-  justify-content: flex-end;
+  justify-content: space-around;
   flex-wrap: nowrap;
 }
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 576px) {
   .menu__entete .menu {
-    position: static;
-    top: auto;
-    right: auto;
-    flex-direction: row;
-    transform: translateX(0);
+    position: absolute;
+    top: 5rem;
+    flex-direction: column;
+    transform: translateX(-100%);
+    background-color: #8c5ea9;
+    border-radius: 5px;
+    align-items: flex-end;
   }
 }
 .menu__entete .menu .menu-item a {
-  padding: 2rem;
-  padding-left: 5rem;
+  padding: 0.4rem;
   color: #6c4485;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
+}
+@media screen and (max-width: 576px) {
+  .menu__entete .menu .menu-item a {
+    color: #EED8C8;
+    font-weight: 400;
+    margin: 2rem;
+    text-align: left;
+  }
 }
 .menu__entete .menu .menu-item::before {
   background: transparent;
@@ -458,7 +468,38 @@ a {
   margin-inline-end: 0rem;
 }
 
+.bouton-burger {
+  margin-left: 1rem;
+  z-index: 10;
+}
+
+/* Gestion de la case à cocher servant à ouvrir le menu */
+#cc-pour-bouton-burger {
+  display: none;
+}
+
+#cc-pour-bouton-burger:checked ~ .menu {
+  transform: translateX(0%);
+}
+
+.bouton-burger > .icone-btn-burger-fermer {
+  display: none;
+}
+
+#cc-pour-bouton-burger:checked ~ .bouton-burger > .icone-btn-burger-ouvrir {
+  display: none;
+}
+
+#cc-pour-bouton-burger:checked ~ .bouton-burger > .icone-btn-burger-fermer {
+  display: block;
+}
+
+.site__entete {
+  width: 100vw;
+}
+
 .site__entete__haut {
+  width: 100%;
   height: 9.2rem;
   display: flex;
   flex-direction: row;
@@ -466,6 +507,23 @@ a {
   background-color: #EED8C8;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 576px) {
+  .site__entete__haut {
+    height: 5rem;
+    width: 100%;
+  }
+}
+
+.custom-logo {
+  width: 150px;
+  height: 150px;
+}
+@media screen and (max-width: 576px) {
+  .custom-logo {
+    width: 5rem;
+    height: 5rem;
+  }
 }
 
 .logo__site {
@@ -480,6 +538,11 @@ a {
   font-size: 1.2rem;
   text-decoration: none;
 }
+@media screen and (max-width: 576px) {
+  .menu__site {
+    width: 10%;
+  }
+}
 
 .barre__recherche {
   padding: 0.2rem;
@@ -488,6 +551,11 @@ a {
 .header__cote__droit {
   display: flex;
   flex-direction: row;
+  margin-right: 4rem;
+}
+
+header {
+  width: 100%;
 }
 
 article {
@@ -510,6 +578,11 @@ article p {
   padding-right: 1rem;
   font-family: Arial, Helvetica, sans-serif;
 }
+@media screen and (max-width: 576px) {
+  article p {
+    font-size: 0.9rem;
+  }
+}
 
 .titre__main {
   font-size: 2.8rem;
@@ -517,16 +590,30 @@ article p {
   text-align: center;
 }
 
+.blocflex__galerie p {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
 .blocflex {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
+  width: 80vw;
+  margin: 0 auto;
+}
+@media screen and (max-width: 992px) {
+  .blocflex {
+    width: 70vw;
+    margin: 0 auto;
+  }
 }
 
 .blocflex__article {
-  flex: 1 0 250px;
-  padding: 5px;
+  padding: 1.2rem;
   margin: 10px;
+  width: 25%;
 }
 
 .blocflex__galerie {
@@ -535,7 +622,28 @@ article p {
   justify-content: center;
 }
 
+.recherche {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.recherche .recherche__input {
+  width: 7rem;
+  border-radius: 50px;
+  border: none;
+  padding: 0.3rem;
+}
+.recherche .recherche__bouton {
+  border-radius: 50px;
+  border: none;
+  background-color: transparent;
+}
+.recherche .recherche__icone {
+  font-size: 1.3rem;
+}
+
 .site {
+  width: 100vw;
+  overflow-x: hidden;
   display: grid;
   grid-template-columns: auto;
   grid-template-areas: "header" "aside" "main" "footer";
@@ -566,6 +674,7 @@ article p {
 .site__aside {
   grid-area: aside;
   background-color: rgb(139, 228, 173);
+  padding: 1.2rem;
 }
 
 .no__aside {

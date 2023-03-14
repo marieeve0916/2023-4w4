@@ -1,17 +1,3 @@
-// .site__titre {
-//     text-decoration: none;
-//     color: rgb(245, 245, 245);
-// }
-
-// .site__titre h1 {
-//     color: rgb(245, 245, 245);
-//     font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
-// }
-
-// .site__desc {
-//     color: #d6b5ea; 
-// }
-
 pre {
     display: none;
 }
@@ -21,32 +7,43 @@ a {
 }
 
 /* ///////////////////////////////// menu__entete */
+
 .menu__entete{ // nav
 
     .menu { // ul
+            width: 20rem;
             display : flex;
             list-style-type: none;
-            justify-content: flex-end;
+            justify-content: space-around;
             flex-wrap: nowrap;
-            @media screen and (min-width:500px) {
-                position : static;
-                top: auto;
-                right:auto;
-                flex-direction: row;
-                transform : translateX(0);
+            @media screen and (max-width:576px) {
+                position : absolute;
+                top: 5rem;
+                flex-direction: column;
+                transform : translateX(-100%);
+                background-color: #8c5ea9;
+                border-radius: 5px;
+                align-items: flex-end;
             }
+
         .menu-item { // li
 
             a{
-                padding : 2rem;
-                padding-left: 5rem;
+                padding : 0.4rem;
                 color: #6c4485;
                 text-decoration: none;
                 font-family: Arial, Helvetica, sans-serif;
                 text-align: center;
                 text-transform: uppercase;
                 font-weight: bold;
+                @media screen and (max-width:576px) {
+                    color: #EED8C8;
+                    font-weight: 400;
+                    margin: 2rem;
+                    text-align: left;
+                }
             }
+        
 
         }
 
@@ -61,7 +58,42 @@ a {
 
 }
 
+.bouton-burger {
+    margin-left: 1rem;
+    z-index: 10;
+}
+
+/* Gestion de la case à cocher servant à ouvrir le menu */
+#cc-pour-bouton-burger {
+    display: none;
+}
+
+#cc-pour-bouton-burger:checked ~ .menu {
+    transform: translateX(0%);
+}
+
+.bouton-burger > .icone-btn-burger-fermer {
+    display: none;
+}
+
+#cc-pour-bouton-burger:checked
+  ~ .bouton-burger
+  > .icone-btn-burger-ouvrir {
+  display: none;
+}
+
+#cc-pour-bouton-burger:checked
+  ~ .bouton-burger
+  > .icone-btn-burger-fermer {
+  display: block;
+}
+
+.site__entete {
+    width: 100vw;
+}
+
 .site__entete__haut {
+    width: 100%;
     height: 9.2rem;
     display: flex;
     flex-direction: row;
@@ -69,16 +101,20 @@ a {
     background-color: #EED8C8;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width:576px) {
+        height: 5rem;
+        width: 100%;
+    }
 }
 
-// .custom-logo {
-//     width: 100%;
-//     height: 100%;
-//     @media screen and (min-width:500px) {
-//         width: 75%;
-//         height: 75%;
-//     }
-// }
+.custom-logo {
+    width: 150px;
+    height: 150px;
+    @media screen and (max-width:576px) {
+        width: 5rem;
+        height: 5rem;
+    }
+}
 
 .logo__site {
     position: relative;
@@ -91,6 +127,9 @@ a {
     justify-content: space-around;
     font-size: 1.2rem;
     text-decoration: none;
+    @media screen and (max-width:576px) {
+        width: 10%;
+    }
 }
 
 .barre__recherche {
@@ -100,6 +139,11 @@ a {
 .header__cote__droit {
     display: flex;
     flex-direction: row;
+    margin-right: 4rem;
+}
+
+header {
+    width: 100%;
 }
 
 

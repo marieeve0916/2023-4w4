@@ -1,5 +1,7 @@
 // Mise en page générale avec Grid
 .site {
+    width: 100vw;
+    overflow-x: hidden;
     display: grid;
     grid-template-columns: auto;
     grid-template-areas:
@@ -38,6 +40,7 @@
     grid-area: aside;
     // padding: 1rem clamp(1rem, 3vw, 20rem);
     background-color: rgb(139, 228, 173);
+    padding: 1.2rem;
 }
 
 .no__aside {
