@@ -442,6 +442,16 @@ a {
     background-color: #8c5ea9;
     border-radius: 5px;
     align-items: flex-end;
+    background-color: aqua;
+  }
+}
+@media screen and (max-width: 500px) {
+  .menu__entete .menu {
+    position: static;
+    top: auto;
+    right: auto;
+    flex-direction: row;
+    transform: translateX(100%);
   }
 }
 .menu__entete .menu .menu-item a {
@@ -523,6 +533,13 @@ a {
   .custom-logo {
     width: 5rem;
     height: 5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .custom-logo {
+    width: 10rem;
+    height: 10rem;
+    border: 10px solid red;
   }
 }
 

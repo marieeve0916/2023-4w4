@@ -8,7 +8,7 @@ a {
 
 /* ///////////////////////////////// menu__entete */
 
-.menu__entete{ // nav
+.menu__entete { // nav
 
     .menu { // ul
             width: 20rem;
@@ -24,6 +24,14 @@ a {
                 background-color: #8c5ea9;
                 border-radius: 5px;
                 align-items: flex-end;
+            background-color: aqua;
+            }
+            @media screen and (max-width:500px) {
+                position : static;
+                top: auto;
+                right:auto;
+                flex-direction: row;
+                transform : translateX(100%);
             }
 
         .menu-item { // li
@@ -114,7 +122,14 @@ a {
         width: 5rem;
         height: 5rem;
     }
+    @media screen and (max-width:500px) {
+        width: 10rem;
+        height: 10rem;
+        border: 10px solid red;
+    }
 }
+
+
 
 .logo__site {
     position: relative;
@@ -145,5 +160,6 @@ a {
 header {
     width: 100%;
 }
+
 
 
