@@ -15,6 +15,7 @@
             <div class="logo__site">
                 <?php the_custom_logo(); ?> 
             </div>
+            <input type="checkbox" id="cc-pour-bouton-burger">
             <div class="menu__site">
                 <?php  wp_nav_menu(array( 
                             "menu" => "entete",
@@ -27,10 +28,8 @@
                 <div class="barre__recherche">
                     <?php get_search_form(); ?>
                 </div>
-                    <input type="checkbox" id="cc-pour-bouton-burger">
                     <label for="cc-pour-bouton-burger" class="bouton-burger">
                         <span class="material-symbols-outlined icone-btn-burger-ouvrir icone" id="menu">menu</span>
-                        <span class="material-symbols-outlined icone-btn-burger-fermer icone" id="fermer-menu"> close </span>
                     </label>
             </div>
         </div>

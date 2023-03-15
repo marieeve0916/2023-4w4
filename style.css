@@ -427,21 +427,27 @@ a {
 
 /* ///////////////////////////////// menu__entete */
 .menu__entete .menu {
-  width: 20rem;
+  width: 30rem;
   display: flex;
   list-style-type: none;
   justify-content: space-around;
   flex-wrap: nowrap;
+  z-index: 8;
 }
 @media screen and (max-width: 576px) {
   .menu__entete .menu {
+    width: 15rem;
+    height: 20rem;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
     position: absolute;
-    top: 5rem;
+    top: -11rem;
+    right: 2rem;
     flex-direction: column;
-    transform: translateX(-100%);
+    transform: translateX(120%);
     background-color: #8c5ea9;
     border-radius: 5px;
-    align-items: flex-end;
+    align-items: flex-start;
   }
 }
 .menu__entete .menu .menu-item a {
@@ -468,9 +474,16 @@ a {
   margin-inline-end: 0rem;
 }
 
+.menu__general {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .bouton-burger {
   margin-left: 1rem;
   z-index: 10;
+  font-size: 2rem;
+  color: #3a1c4c;
 }
 
 /* Gestion de la case à cocher servant à ouvrir le menu */
@@ -478,20 +491,10 @@ a {
   display: none;
 }
 
-#cc-pour-bouton-burger:checked ~ .menu__site {
-  transform: translateX(0%);
-}
-
-.bouton-burger > .icone-btn-burger-fermer {
-  display: none;
-}
-
-#cc-pour-bouton-burger:checked ~ .bouton-burger > .icone-btn-burger-ouvrir {
-  display: none;
-}
-
-#cc-pour-bouton-burger:checked ~ .bouton-burger > .icone-btn-burger-fermer {
-  display: block;
+@media screen and (max-width: 576px) {
+  #cc-pour-bouton-burger:checked ~ .menu__site ul {
+    transform: translateX(0%);
+  }
 }
 
 .site__entete {
