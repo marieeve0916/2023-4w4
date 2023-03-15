@@ -8,14 +8,21 @@
         width: 70vw;
         margin: 0 auto;
     }
+    @media screen and (max-width:576px) {
+        width: 95vw;
+        margin: 0 auto;
+    }
 }
 
 
 .blocflex__article {
-    // flex : 1 0 250px;
+    flex : 1 0;
     padding : 1.2rem;
     margin : 10px;
     width: 25%;
+    @media screen and (max-width:576px) {
+        width: 35%
+    }
 }
 
 .blocflex__galerie {

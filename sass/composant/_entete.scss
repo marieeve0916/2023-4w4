@@ -69,6 +69,7 @@ a {
     flex-direction: row-reverse;
 }
 
+/* Gestion de la case à cocher servant à ouvrir le menu */
 .bouton-burger {
     margin-left: 1rem;
     z-index: 10;
@@ -76,7 +77,11 @@ a {
     color: #3a1c4c;
 }
 
-/* Gestion de la case à cocher servant à ouvrir le menu */
+.bouton-burger:hover {
+    color: white;
+    cursor: pointer;
+}
+
 #cc-pour-bouton-burger {
     display: none;
 }

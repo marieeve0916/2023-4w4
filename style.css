@@ -479,6 +479,7 @@ a {
   flex-direction: row-reverse;
 }
 
+/* Gestion de la case à cocher servant à ouvrir le menu */
 .bouton-burger {
   margin-left: 1rem;
   z-index: 10;
@@ -486,7 +487,11 @@ a {
   color: #3a1c4c;
 }
 
-/* Gestion de la case à cocher servant à ouvrir le menu */
+.bouton-burger:hover {
+  color: white;
+  cursor: pointer;
+}
+
 #cc-pour-bouton-burger {
   display: none;
 }
@@ -612,11 +617,23 @@ article p {
     margin: 0 auto;
   }
 }
+@media screen and (max-width: 576px) {
+  .blocflex {
+    width: 95vw;
+    margin: 0 auto;
+  }
+}
 
 .blocflex__article {
+  flex: 1 0;
   padding: 1.2rem;
   margin: 10px;
   width: 25%;
+}
+@media screen and (max-width: 576px) {
+  .blocflex__article {
+    width: 35%;
+  }
 }
 
 .blocflex__galerie {
@@ -644,6 +661,11 @@ article p {
   font-size: 1.3rem;
 }
 
+.site__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
 .site {
   width: 100vw;
   overflow-x: hidden;
@@ -652,7 +674,7 @@ article p {
   grid-template-areas: "header" "aside" "main" "footer";
   row-gap: 50px;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 992px) {
   .site {
     grid-template-columns: 20% auto;
     grid-template-areas: "header header" "aside main" ". main" "footer footer";
@@ -661,17 +683,16 @@ article p {
 
 .site__entete {
   grid-area: header;
-  background-color: antiquewhite;
 }
 
 .site__main {
   grid-area: main;
-  overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+  overflow: hidden;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: antiquewhite;
+  background-color: #9265af;
 }
 
 .site__aside {

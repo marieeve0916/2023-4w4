@@ -10,7 +10,7 @@
       "main"
       "footer";
     row-gap: 50px;
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 992px) {
         grid-template-columns: 20% auto;
         grid-template-areas:
           "header header"
@@ -23,17 +23,16 @@
 .site__entete {
     grid-area: header;
     //padding: 1rem clamp(1rem, 3vw, 20rem);
-    background-color: antiquewhite;
 }
   
 .site__main {
     grid-area: main;
-    overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+    overflow: hidden;
 }
   
 .site__footer {
     grid-area: footer;
-    background-color: antiquewhite;
+    background-color: #9265af;
 }
 
 .site__aside{
