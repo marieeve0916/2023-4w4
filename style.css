@@ -705,6 +705,28 @@ article p {
   justify-content: space-between;
 }
 
+.menu-cours-container .menu {
+  background-color: #9265af;
+  padding: 2rem;
+  color: whitesmoke;
+  border-radius: 5px;
+  width: 85%;
+}
+.menu-cours-container .menu .menu-item a {
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.menu-cours-container .menu .menu-item a code {
+  color: #EED8C8;
+  font-weight: bold;
+}
+.menu-cours-container .menu .menu-item a p {
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 10rem;
+  padding-bottom: 1.2rem;
+}
+
 .site {
   width: 100vw;
   overflow-x: hidden;
@@ -736,26 +758,19 @@ article p {
 
 .site__aside {
   grid-area: aside;
-  background-color: #9265af;
-  padding: 1rem;
-  color: whitesmoke;
-  border-radius: 5px;
-  width: 85%;
+}
+.site__aside h3 {
+  font-size: 1.7rem;
+  margin-left: 1.5rem;
 }
 .site__aside li::before {
-  display: none;
-}
-.site__aside code {
-  color: #EED8C8;
-  font-weight: bold;
-}
-.site__aside p {
-  color: whitesmoke;
-  font-family: Arial, Helvetica, sans-serif;
-  width: 10rem;
-}
-.site__aside a {
-  font-size: 1.2rem;
+  content: "";
+  background: transparent;
+  border-radius: 0;
+  padding-inline: 0;
+  margin-inline-end: 0;
+  width: 0;
+  height: 0;
 }
 
 .no__aside {
