@@ -3,16 +3,37 @@
     flex-wrap: nowrap;
     
     .recherche__input {
-        width: 7rem;
         border-radius: 50px;
         border: none;
-        padding: 0.3rem;
+        // Ordinateur
+        @media screen and (min-width:993px) {
+            width: 15rem;
+            padding: 0.4rem;
+            margin-right: 0.6rem;
+        }
+        // Téléphone
+        @media screen and (max-width:576px) {
+            padding: 0.2rem;
+            margin-right: 0.3rem;
+            width: 6rem;
+        }
+        // Tablette
+        @media screen and (min-width:577px) and (max-width:992px) {
+            padding: 0.3rem;
+            margin-right: 0.4rem;
+            width: 7rem; 
+        }
     }
 
     .recherche__bouton {
         border-radius: 50px;
         border: none;
         background-color: transparent;
+    }
+
+    .recherche__bouton:hover {
+        cursor: pointer;
+        transform: scale(110%);
     }
 
     .recherche__icone {

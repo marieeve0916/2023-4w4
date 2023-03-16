@@ -636,7 +636,7 @@ article p {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 80vw;
+  width: 75vw;
   margin: 0 auto;
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -668,6 +668,11 @@ article p {
     width: 45%;
   }
 }
+@media screen and (min-width: 993px) {
+  .blocflex__article {
+    width: 50%;
+  }
+}
 
 .blocflex__galerie {
   width: 85%;
@@ -686,15 +691,38 @@ article p {
   flex-wrap: nowrap;
 }
 .recherche .recherche__input {
-  width: 7rem;
   border-radius: 50px;
   border: none;
-  padding: 0.3rem;
+}
+@media screen and (min-width: 993px) {
+  .recherche .recherche__input {
+    width: 15rem;
+    padding: 0.4rem;
+    margin-right: 0.6rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .recherche .recherche__input {
+    padding: 0.2rem;
+    margin-right: 0.3rem;
+    width: 6rem;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .recherche .recherche__input {
+    padding: 0.3rem;
+    margin-right: 0.4rem;
+    width: 7rem;
+  }
 }
 .recherche .recherche__bouton {
   border-radius: 50px;
   border: none;
   background-color: transparent;
+}
+.recherche .recherche__bouton:hover {
+  cursor: pointer;
+  transform: scale(110%);
 }
 .recherche .recherche__icone {
   font-size: 1.3rem;
@@ -710,7 +738,7 @@ article p {
   padding: 2rem;
   color: whitesmoke;
   border-radius: 5px;
-  width: 85%;
+  width: 100%;
 }
 .menu-cours-container .menu .menu-item a {
   font-size: 1.2rem;
@@ -732,7 +760,7 @@ article p {
   padding: 2rem;
   color: whitesmoke;
   border-radius: 5px;
-  width: 85%;
+  width: 100%;
 }
 .menu-menu-4w4-container .menu .menu-item a {
   font-size: 1.2rem;
