@@ -17,14 +17,14 @@ Text Domain: 4w4-MarieEve-Pelletier
 @import "normalize/normalize";
 //@import "normalize/box-sizing";
 
-/* ---------------------------------------------- base */
+/* ---------------------------------------------- Base */
 @import "base/heading";
 @import "base/markdown";
 //@import "base/espacement";
 //@import "base/lien";
 //@import "base/list";
 
-/* --------------------------------------------- composant */
+/* --------------------------------------------- Composant */
 @import "composant/entete";
 @import "composant/main";
 @import "composant/blocflex";
@@ -33,5 +33,5 @@ Text Domain: 4w4-MarieEve-Pelletier
 @import "composant/menu_cours";
 @import "composant/menu_notes";
 
-// Layout
+/* --------------------------------------------- Layout */
 @import "layout/aside-contenu"

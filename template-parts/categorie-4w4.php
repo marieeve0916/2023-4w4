@@ -4,11 +4,6 @@
      * qui s'intègre dans la liste des cours qu'on accède avec category/cours
      */
     $titre = get_the_title();
-
-    // Retirer le premier 0 du titre d'article
-    // if (substr($titre, 0, 1) == '0') {
-
-    // }
 ?>
 
 
