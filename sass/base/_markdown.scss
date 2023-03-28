@@ -14,11 +14,7 @@ ol {
     }
 }
 
-ul {
-    
-}
-
-ul   li::before {
+ul  li::before {
     content: " ";
     background: rgb(136, 91, 163);
     border-radius: 100px;
@@ -36,19 +32,22 @@ ol li {
     margin: 0.5rem 0rem;
 }
 
-li > ol {}
-li > ul {}
-
 pre {
 
     background-color : #555;
     color : #eee;
     overflow-x: scroll;
 }
-code {}
 
-blockquote {}
+hr {
+  display: none;
+}
 
-strong{}
+article {
+  width: 90%;
+  margin: auto 0;
+}
 
-hr {}
+li {
+  font-family: Arial, Helvetica, sans-serif;
+}

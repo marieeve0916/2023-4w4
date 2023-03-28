@@ -322,7 +322,7 @@ template {
   display: none;
 }
 
-/* ---------------------------------------------- base */
+/* ---------------------------------------------- Base */
 h1 {
   font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);
 }
@@ -416,7 +416,20 @@ pre {
   overflow-x: scroll;
 }
 
-/* --------------------------------------------- composant */
+hr {
+  display: none;
+}
+
+article {
+  width: 90%;
+  margin: auto 0;
+}
+
+li {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --------------------------------------------- Composant */
 pre {
   display: none;
 }
@@ -438,16 +451,19 @@ pre {
     margin-bottom: 15rem;
     position: absolute;
     top: -11rem;
-    right: 2rem;
+    right: 1rem;
     flex-direction: column;
-    transform: translateX(120%);
+    transform: translateX(200%);
     background-color: #8c5ea9;
     border-radius: 5px;
     align-items: flex-start;
+    transition: transform ease-in-out 400ms;
   }
 }
 .menu__entete .menu .menu-item a {
-  padding: 0.4rem;
+  padding: 10px;
+  border-radius: 50px;
+  transition: all ease-in-out 200ms;
   color: #6c4485;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -463,6 +479,17 @@ pre {
     text-align: left;
   }
 }
+.menu__entete .menu .menu-item a:hover {
+  background-color: #d5b59e;
+  color: whitesmoke;
+}
+@media screen and (max-width: 992px) {
+  .menu__entete .menu .menu-item a:hover {
+    background-color: #a476bf;
+    color: white;
+    font-weight: 300;
+  }
+}
 .menu__entete .menu .menu-item::before {
   background: transparent;
   border-radius: 0rem;
@@ -475,12 +502,12 @@ pre {
   flex-direction: row-reverse;
 }
 
-/* Gestion de la case à cocher servant à ouvrir le menu */
 .bouton-burger {
   margin-left: 1rem;
   z-index: 10;
   font-size: 2rem;
   color: #3a1c4c;
+  transition: all ease-in-out 200ms;
 }
 @media screen and (min-width: 993px) {
   .bouton-burger {
@@ -508,7 +535,7 @@ pre {
 }
 
 .site__entete__haut {
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -524,7 +551,6 @@ pre {
 @media screen and (max-width: 576px) {
   .site__entete__haut {
     height: 5rem;
-    width: 100%;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -577,17 +603,20 @@ pre {
 .header__cote__droit {
   display: flex;
   flex-direction: row;
-  margin-right: 4rem;
+  margin-right: 3rem;
 }
 
 header {
   width: 100%;
 }
 
+html {
+  max-width: 100%;
+}
+
 article {
   padding: 3rem;
   background-color: #EED8C8;
-  width: 90vw;
   margin: 2rem auto;
   border-radius: 5px;
   box-shadow: 5px 5px 10px rgba(143, 101, 73, 0.5098039216);
@@ -596,6 +625,11 @@ article {
 article a {
   color: #663187;
   font-size: 1.2rem;
+}
+@media screen and (max-width: 576px) {
+  article a {
+    font-size: 1rem;
+  }
 }
 @media screen and (min-width: 577px) {
   article a {
@@ -620,6 +654,17 @@ article p {
   }
 }
 
+@media screen and (max-width: 576px) {
+  article h6 {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  article h6 {
+    font-size: 1.1rem;
+  }
+}
+
 .titre__main {
   font-size: 2.8rem;
   margin-bottom: 1rem;
@@ -630,6 +675,14 @@ article p {
   display: none;
   padding: 0;
   margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 .blocflex {
@@ -653,10 +706,9 @@ article p {
 }
 
 .blocflex__article {
-  flex: 1 0;
+  flex: 1 0 250px;
   padding: 1.2rem;
   margin: 10px;
-  width: 25%;
 }
 @media screen and (max-width: 576px) {
   .blocflex__article {
@@ -672,6 +724,16 @@ article p {
   .blocflex__article {
     width: 50%;
   }
+}
+.blocflex__article a {
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 50px;
+  transition: all ease-in-out 200ms;
+}
+.blocflex__article a:hover {
+  background-color: #9265af;
+  color: whitesmoke;
 }
 
 .blocflex__galerie {
@@ -731,6 +793,22 @@ article p {
 .site__footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.site__footer .lien {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.site__footer .lien a {
+  color: white;
+  font-display: to-upper-case;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+}
+.site__footer .lien:first-of-type {
+  margin-left: 3rem;
 }
 
 .menu-cours-container .menu {
@@ -739,20 +817,59 @@ article p {
   color: whitesmoke;
   border-radius: 5px;
   width: 100%;
+  margin: auto 0;
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .menu-cours-container .menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95vw;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .menu-cours-container .menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: 0 auto;
+  }
 }
 .menu-cours-container .menu .menu-item a {
   font-size: 1.2rem;
   text-decoration: none;
 }
+@media screen and (max-width: 992px) {
+  .menu-cours-container .menu .menu-item a {
+    padding: 2rem;
+  }
+}
 .menu-cours-container .menu .menu-item a code {
   color: #EED8C8;
   font-weight: bold;
+  padding: 5px;
+  border-radius: 50px;
+  transition: all ease-in-out 200ms;
 }
 .menu-cours-container .menu .menu-item a p {
   color: whitesmoke;
   font-family: Arial, Helvetica, sans-serif;
   width: 10rem;
   padding-bottom: 1.2rem;
+  display: none;
+}
+@media screen and (min-width: 993px) {
+  .menu-cours-container .menu .menu-item a p {
+    display: block;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .menu-cours-container .menu .menu-item a p {
+    font-size: 1.2rem;
+  }
+}
+.menu-cours-container .menu .menu-item code:hover {
+  background-color: #b287ce;
 }
 
 .menu-menu-4w4-container .menu {
@@ -761,14 +878,43 @@ article p {
   color: whitesmoke;
   border-radius: 5px;
   width: 100%;
+  margin: auto 0;
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .menu-menu-4w4-container .menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95vw;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .menu-menu-4w4-container .menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: 0 auto;
+  }
 }
 .menu-menu-4w4-container .menu .menu-item a {
   font-size: 1.2rem;
   text-decoration: none;
-  color: #EED8C8;
+  color: white;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+  border-radius: 50px;
+  transition: all ease-in-out 200ms;
+}
+@media screen and (max-width: 992px) {
+  .menu-menu-4w4-container .menu .menu-item a {
+    padding: 2rem;
+  }
+}
+.menu-menu-4w4-container .menu .menu-item a:hover {
+  background-color: #b287ce;
 }
 
+/* --------------------------------------------- Layout */
 .site {
   width: 100vw;
   overflow-x: hidden;

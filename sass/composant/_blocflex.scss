@@ -16,12 +16,10 @@
     }
 }
 
-
 .blocflex__article {
-    flex : 1 0;
+    flex : 1 0 250px;
     padding : 1.2rem;
     margin : 10px;
-    width: 25%;
     // Téléphone
     @media screen and (max-width:576px) {
         width: 35%
@@ -33,6 +31,17 @@
     //Ordinateur
     @media screen and (min-width:993px) {
         width: 50%;
+    }
+
+    a {
+        text-decoration: none;
+        padding: 5px;
+        border-radius: 50px;
+        transition: all ease-in-out 200ms;
+    }
+    a:hover {
+        background-color: #9265af;
+        color: whitesmoke;;
     }
 }
 
