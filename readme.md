@@ -1,29 +1,30 @@
-# TP1
+# Examen Intra - erreur404.php
 ## 4w4 - Conception d'interfaces et développement web
 ### Auteur: Marie-Ève Pelletier
 
 #### Objectifs
-- Mettre en valeur le progamme TIM du collège de Maisonneuve
-- Continuer de faire progresser le thème
-- Déployer le projet sur le serveur Siteground
+- Adapter le modèle 404.php pour reproduire la maquette inclue avec le devis
 
-#### Éléments à intégrer
-- Un pied de page
-- Un design de thème amélioré avec Sass et PHP
-- Amélioration de l'affichage produit par les modèles:
-   * front-page.php
-   * single.php
-   * category.php
-   * search.php
-   * header.php
-   * footer.php
-- Une mise en page entièrement adaptative
-- S'inspirer des sites:
-   * https://www.scrum.org/
-   * https://cfe.dev/
+#### Éléments à modifier
+-  Titre principal
+-	Sous-titre et texte
+-	Une image en arrière plan avec filtre opaque
+-	Formulaire de recherche fonctionnel et bien reproduit comme sur la maquette
+-	Le menu wp « cours »
+-	Le menu wp « note-4w4 »
+-	La zone aside n'apparaît pas dans cette page
 
 #### Liens de référence
 - Site sur SiteGround
     - https://cidweb38.sg-host.com/
 - GitHub
     - https://github.com/marieeve0916
+
+
+    function pour detecter erreur 404
+    image: jouer avec transparence
+    les deux menus ont le meme style
+
+    pour le aside: comme dans front page
+
+    pas push pendant, juste a la fin
