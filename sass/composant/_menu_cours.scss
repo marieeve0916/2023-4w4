@@ -1,29 +1,63 @@
 .menu-cours-container{
-
     .menu{
         background-color: #9265af;
         padding: 2rem;
         color: whitesmoke;
         border-radius: 5px;
         width: 100%;
+        margin: auto 0;
+        // Tablette
+        @media screen and (min-width:577px) and (max-width:992px) {
+            display: flex;
+            flex-wrap: wrap;
+            width: 95vw;
+            margin: 0 auto;
+        }
+        // Téléphone
+        @media screen and (max-width:576px) {
+            display: flex;
+            flex-wrap: wrap;
+            width: 90vw;
+            margin: 0 auto;
+        }
 
         .menu-item{
             a{
                 font-size: 1.2rem;
                 text-decoration: none;
+                // Ordinateur
+                @media screen and (max-width:992px) {
+                    padding: 2rem;
+                }
                 
                 code {
                     color: #EED8C8;
                     font-weight: bold;
+                    padding: 5px;
+                    border-radius: 50px;
+                    transition: all ease-in-out 200ms;
                 }
 
                 p{
+                    // Ordinateur
+                    @media screen and (min-width:993px) {
+                        display: block;
+                    }
+                    // Tablette
+                    @media screen and (min-width:577px) and (max-width:992px) {
+                        font-size: 1.2rem;
+                    }
                     color: whitesmoke;
                     font-family: Arial, Helvetica, sans-serif;
                     width: 10rem; 
                     padding-bottom: 1.2rem;
+                    display: none;
                 } 
-            } 
+            }
+            
+            code:hover {
+                background-color: #b287ce;
+            }
         }   
     } 
 } 

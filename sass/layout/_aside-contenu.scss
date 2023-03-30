@@ -22,7 +22,6 @@
 
 .site__entete {
     grid-area: header;
-    //padding: 1rem clamp(1rem, 3vw, 20rem);
 }
   
 .site__main {
@@ -52,6 +51,7 @@
         width: 0;
         height: 0;
     }
+
 }
 
 .no__aside {

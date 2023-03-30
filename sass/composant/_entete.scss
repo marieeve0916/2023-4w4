@@ -7,32 +7,36 @@ pre {
 .menu__entete { // nav
 
     .menu { // ul
-            width: 30rem;
-            display : flex;
-            list-style-type: none;
-            justify-content: space-around;
-            flex-wrap: nowrap;
-            z-index: 8;
-            // Téléphone et tablette
-            @media screen and (max-width:992px) {
-                width: 15rem;
-                height: 20rem;
-                margin-top: 15rem;
-                margin-bottom: 15rem;
-                position : absolute;
-                top: -11rem;
-                right: 2rem;
-                flex-direction: column;
-                transform : translateX(120%);
-                background-color: #8c5ea9;
-                border-radius: 5px;
-                align-items: flex-start;
-            }
+        width: 30rem;
+        display : flex;
+        list-style-type: none;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        z-index: 8;
+        
+        // Téléphone et tablette
+        @media screen and (max-width:992px) {
+            width: 15rem;
+            height: 20rem;
+            margin-top: 15rem;
+            margin-bottom: 15rem;
+            position : absolute;
+            top: -11rem;
+            right: 1rem;
+            flex-direction: column;
+            transform : translateX(200%);
+            background-color: #8c5ea9;
+            border-radius: 5px;
+            align-items: flex-start;
+            transition: transform ease-in-out 400ms;
+        }
 
         .menu-item { // li
 
             a{
-                padding : 0.4rem;
+                padding: 10px;
+                border-radius: 50px;
+                transition: all ease-in-out 200ms;
                 color: #6c4485;
                 text-decoration: none;
                 font-family: Arial, Helvetica, sans-serif;
@@ -48,6 +52,16 @@ pre {
                 }
             }
         
+            a:hover {
+                background-color: #d5b59e;
+                color: whitesmoke;
+                // Téléphone et tablette
+                @media screen and (max-width:992px) {
+                    background-color: #a476bf;
+                    color: white;
+                    font-weight: 300;
+                }
+            }
 
         }
 
@@ -67,7 +81,6 @@ pre {
     flex-direction: row-reverse;
 }
 
-/* Gestion de la case à cocher servant à ouvrir le menu */
 .bouton-burger {
     margin-left: 1rem;
     z-index: 10;
@@ -77,6 +90,7 @@ pre {
     @media screen and (min-width:993px) {
         display: none;
     }
+    transition: all ease-in-out 200ms;
 }
 
 .bouton-burger:hover {
@@ -100,7 +114,7 @@ pre {
 }
 
 .site__entete__haut {
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -114,7 +128,6 @@ pre {
     // Téléphone
     @media screen and (max-width:576px) {
         height: 5rem;
-        width: 100%;
     }
     // Tablette
     @media screen and (min-width:577px) and (max-width:992px) {
@@ -164,7 +177,7 @@ pre {
 .header__cote__droit {
     display: flex;
     flex-direction: row;
-    margin-right: 4rem;
+    margin-right: 3rem;
 }
 
 header {

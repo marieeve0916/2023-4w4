@@ -13,7 +13,7 @@
             $menu = 'menu-4w4';
             if (in_category('cours')) {
                 $menu = "cours";
-                            // $menu peut prendre les valeurs "4w4" ou "cours"
+            // $menu peut prendre les valeurs "4w4" ou "cours"
             // echo $menu;   
          }
             wp_nav_menu(array( 
