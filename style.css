@@ -927,23 +927,52 @@ h3 {
   flex-direction: column;
   align-items: center;
 }
+.site__main .barre__recherche {
+  padding: 2rem;
+}
+.site__main .texte__404 {
+  color: rgb(164, 66, 164);
+  font-size: 4rem;
+}
 
-.menu__cours {
-  width: 50rem;
+.menus__404 {
+  width: 55rem;
   display: flex;
   flex-direction: row;
 }
-.menu__cours nav {
+.menus__404 nav {
   width: 100%;
   display: flex;
   flex-direction: row;
 }
-.menu__cours ul {
+.menus__404 ul {
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
+.menus__404 li {
+  width: 15rem;
+  padding: 1rem;
+}
+.menus__404 li::before {
+  content: none;
+}
+.menus__404 code {
+  font-size: 2rem;
+  color: rgb(169, 112, 169);
+}
+.menus__404 p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+.menus__404 a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+
 /* --------------------------------------------- Layout */
 .site {
   width: 100vw;

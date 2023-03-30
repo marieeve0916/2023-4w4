@@ -11,10 +11,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .barre__recherche {
+        padding: 2rem;
+    }
+
+    .texte__404 {
+        color: rgb(164, 66, 164);
+        font-size: 4rem;
+    }
 }
 
-.menu__cours {
-    width: 50rem;
+.menus__404 {
+    width: 55rem;
     display: flex;
     flex-direction: row;
 
@@ -29,9 +38,32 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    li {
+        width: 15rem;
+        padding: 1rem;
+    }
+
+    li::before {
+        content: none;
+    }
+
+    code {
+        font-size: 2rem;
+        color: rgb(169, 112, 169);
+    }
+
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
     }
 
     a {
-
+        text-decoration: none;
+        color: black;
+        font-size: 1.2rem;
     }
 }
+

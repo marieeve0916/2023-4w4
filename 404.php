@@ -4,13 +4,13 @@
 ?>
 <main class="site__main custom-background"> 
     <pre>404.php</pre>
-    <h1>Erreur 404</h1>
+    <h1 class="texte__404">Erreur 404</h1>
     <h4>Page introuvable. Vous pouvez tenter une recherche:</h4>
     <div class="barre__recherche">
         <?php get_search_form(); ?>
     </div>
     <h5>Nos choix de cours</h5>
-    <div class="menu__cours">
+    <div class="menus__404">
         <?php
             wp_nav_menu(array(
                 'menu'				=> "cours",
@@ -20,13 +20,15 @@
         ?>
     </div>
     <h5>Les notes de cours</h5>
-    <?php
-        wp_nav_menu(array(
-            'menu'				=> "menu-4w4",
-            'container'			=> "nav",
-            'container_class'	=> "menu_4w4"
-        ) );
-    ?>
+    <div class="menus__404">
+        <?php
+            wp_nav_menu(array(
+                'menu'				=> "menu-4w4",
+                'container'			=> "nav",
+                'container_class'	=> "menu_4w4"
+            ) );
+        ?>
+    </div>
 </main>
 <?php get_footer() ?>
 </body>
