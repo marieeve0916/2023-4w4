@@ -5,11 +5,11 @@
 <main class="site__main custom-background"> 
     <pre>404.php</pre>
     <h1 class="texte__404">Erreur 404</h1>
-    <h4>Page introuvable. Vous pouvez tenter une recherche:</h4>
+    <h4 class="h4__404">Page introuvable. Vous pouvez tenter une recherche:</h4>
     <div class="barre__recherche">
         <?php get_search_form(); ?>
     </div>
-    <h5>Nos choix de cours</h5>
+    <h5 class="h5__404">Nos choix de cours</h5>
     <div class="menus__404">
         <?php
             wp_nav_menu(array(
@@ -19,7 +19,7 @@
             ) );
         ?>
     </div>
-    <h5>Les notes de cours</h5>
+    <h5 class="h5__404">Les notes de cours</h5>
     <div class="menus__404">
         <?php
             wp_nav_menu(array(
