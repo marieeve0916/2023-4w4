@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <?php wp_head() ?>
 </head>
-<body class="site <?php echo(is_front_page() || is_page('404') ? "no__aside" : "");?>" >
+<body class="site <?php echo(is_front_page() || is_page(null) ? "no__aside" : "");?>" >
     <header class="site__entete">
         <div class="site__entete__haut">
             <div class="logo__site">
