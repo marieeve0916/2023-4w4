@@ -947,6 +947,7 @@ h3 {
 @media screen and (min-width: 577px) and (max-width: 992px) {
   .site__main .h4__404 {
     font-size: 2rem;
+    padding-left: 1rem;
   }
 }
 @media screen and (max-width: 576px) {
@@ -958,6 +959,12 @@ h3 {
 
 .menus__404 {
   width: 65rem;
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .menus__404 {
+    width: 50rem;
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 576px) {
   .menus__404 {
@@ -988,11 +995,21 @@ h3 {
     width: 80%;
   }
 }
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .menus__404 ul {
+    width: 80%;
+  }
+}
 .menus__404 li {
   width: 15rem;
   padding: 1rem;
 }
 @media screen and (max-width: 576px) {
+  .menus__404 li {
+    width: 10rem;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
   .menus__404 li {
     width: 10rem;
   }
@@ -1009,6 +1026,11 @@ h3 {
     font-size: 1.3rem;
   }
 }
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .menus__404 code {
+    font-size: 1.6;
+  }
+}
 .menus__404 p {
   font-family: Arial, Helvetica, sans-serif;
   color: black;
@@ -1016,6 +1038,11 @@ h3 {
 @media screen and (max-width: 576px) {
   .menus__404 p {
     font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .menus__404 p {
+    font-size: 1.3rem;
   }
 }
 .menus__404 a {

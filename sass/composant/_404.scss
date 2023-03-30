@@ -36,6 +36,7 @@
         // Tablette
         @media screen and (min-width:577px) and (max-width:992px) {
             font-size: 2rem;
+            padding-left: 1rem;
         }
         // Téléphone
         @media screen and (max-width:576px) {
@@ -50,6 +51,8 @@
 
     // Tablette
     @media screen and (min-width:577px) and (max-width:992px) {
+        width: 50rem;
+        margin: 0 auto;
     }
     // Téléphone
     @media screen and (max-width:576px) {
@@ -77,6 +80,10 @@
         @media screen and (max-width:576px) {
             width: 80%;
         }
+        // Tablette
+        @media screen and (min-width:577px) and (max-width:992px) {
+            width: 80%
+        }
     }
 
     li {
@@ -84,6 +91,10 @@
         padding: 1rem;
         // Téléphone
         @media screen and (max-width:576px) {
+            width: 10rem;
+        }
+        // Tablette
+        @media screen and (min-width:577px) and (max-width:992px) {
             width: 10rem;
         }
     }
@@ -98,6 +109,9 @@
         @media screen and (max-width:576px) {
             font-size: 1.3rem;
         }
+        @media screen and (min-width:577px) and (max-width:992px) {
+            font-size: 1.6;
+        }
     }
 
     p {
@@ -105,6 +119,10 @@
         color: black;
         @media screen and (max-width:576px) {
             font-size: 1.2rem;
+        }
+        // Tablette
+        @media screen and (min-width:577px) and (max-width:992px) {
+            font-size: 1.3rem;
         }
     }
 
