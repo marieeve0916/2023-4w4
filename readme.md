@@ -1,18 +1,13 @@
-# Examen Intra - erreur404.php
+# Lab 4
 ## 4w4 - Conception d'interfaces et développement web
 ### Auteur: Marie-Ève Pelletier
 
 #### Objectifs
-- Adapter le modèle 404.php pour reproduire la maquette inclue avec le devis
-
-#### Éléments à modifier
--  Titre principal
--	Sous-titre et texte
--	Une image en arrière plan avec filtre opaque
--	Formulaire de recherche fonctionnel et bien reproduit comme sur la maquette
--	Le menu wp « cours »
--	Le menu wp « note-4w4 »
--	La zone aside n'apparaît pas dans cette page
+- Ajouter quelques champs personnalisés pour la page d'accueil
+- Utilisez des types de champs qu'on a pas encore utilisé
+- Débuter le carrousel
+- Afficher le conteneur du carrousel avec une animation
+- Afficher les images de la galerie dans le carrousel
 
 #### Liens de référence
 - Site sur SiteGround
