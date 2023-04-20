@@ -914,8 +914,8 @@ h3 {
   background-color: #b287ce;
 }
 
-.custom_background {
-  background-image: url("http://localhost:8080/4w4gr1/wp-content/uploads/2023/03/pexels-yelena-odintsova-15464743.jpg");
+body {
+  background-color: rgba(255, 255, 255, 0.866);
 }
 
 .site__main {

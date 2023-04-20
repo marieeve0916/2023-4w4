@@ -8,5 +8,6 @@
         <a href="https://github.com/marieeve0916/2023-4w4/tree/tp1">GitHub</a>
     </section>
     <section class="logo__footer"><?php the_custom_logo(); ?></section>
+    <div class="sidebar"><?php dynamic_sidebar("sidebar"); ?></div>
 </footer>
     <?php wp_footer() ?>
