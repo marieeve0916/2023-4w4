@@ -15,6 +15,12 @@
                 }?> 
                 <?php endwhile; ?>
             <?php  endif; ?>
+            <?php  wp_nav_menu(array( 
+                            "menu" => "evenement",
+                            "container" => "nav",
+                            "container_class" => "menu_evenement"
+                        )); 
+                ?>
         </section>
 </main>
 <?php get_footer() ?>
