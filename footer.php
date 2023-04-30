@@ -13,5 +13,6 @@
         <div class="sidebar">
             <?php dynamic_sidebar( 'footer3' ); ?>
         </div>
-    </section>   
+    </section>  
+    <?php wp_footer(); ?> 
 </footer>
