@@ -1047,6 +1047,45 @@ body {
   font-size: 1.2rem;
 }
 
+.blocflex .menu_evenement {
+  outline: 5px solid red;
+}
+.blocflex .menu_evenement .menu {
+  background-color: #9265af;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 75vw;
+  margin: 0 auto;
+}
+.blocflex .menu_evenement .menu .menu-item a {
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 50px;
+  transition: all ease-in-out 200ms;
+}
+.blocflex .menu_evenement .menu .menu-item a .title {
+  color: red;
+}
+.blocflex .menu_evenement .menu .menu-item a .description {
+  color: green;
+}
+.blocflex .menu_evenement .menu .menu-item a:hover {
+  background-color: #9265af;
+  color: whitesmoke;
+}
+
+.img__archive {
+  width: 80%;
+  height: 50px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.archive__cours .img__archive {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=school");
+}
+
 /* --------------------------------------------- Layout */
 .site {
   width: 100vw;
