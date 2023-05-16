@@ -74,10 +74,6 @@ function cidweb_modifie_requete_principal( $query ) {
     function perso_menu_item_title($title, $item, $args, $depth) {
     // Remplacer 'nom_de_votre_menu' par l'identifiant de votre menu
     if($args->menu == 'cours') {
-    // Modifier la longueur du titre en fonction de vos besoins
-    // À modifier/améliorer pour TP1
-
-    // MODIFIER ICI LES P
     $sigle = substr($title,4,3);
     $title = substr($title, 7);
     $title = "<code>" .$sigle. "</code>" . "<p>" . wp_trim_words($title, 3, ' ... ') . "</p>" ; 
