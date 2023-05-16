@@ -726,6 +726,7 @@ h3 {
   }
 }
 .blocflex__article a {
+  text-transform: uppercase;
   text-decoration: none;
   padding: 5px;
   border-radius: 50px;
@@ -1047,32 +1048,73 @@ body {
   font-size: 1.2rem;
 }
 
-.blocflex .menu_evenement {
-  outline: 5px solid red;
-}
 .blocflex .menu_evenement .menu {
-  background-color: #9265af;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 75vw;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 90vw;
   margin: 0 auto;
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .blocflex .menu_evenement .menu {
+    width: 90vw;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .blocflex .menu_evenement .menu {
+    width: 95vw;
+    margin: 0 auto;
+  }
+}
+.blocflex .menu_evenement .menu li::before {
+  content: "";
+  background: transparent;
+  border-radius: 0;
+  padding-inline: 0;
+  margin-inline-end: 0;
+  width: 0;
+  height: 0;
+}
+.blocflex .menu_evenement .menu .menu-item {
+  padding: 2.4rem;
+  background-color: #633482;
+  margin: 2rem auto;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(91, 33, 129, 0.2431372549);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .blocflex .menu_evenement .menu .menu-item a {
   text-decoration: none;
-  padding: 5px;
   border-radius: 50px;
   transition: all ease-in-out 200ms;
+  width: 95%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .blocflex .menu_evenement .menu .menu-item a .title {
-  color: red;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 5px;
 }
 .blocflex .menu_evenement .menu .menu-item a .description {
-  color: green;
+  padding: 5px;
+  color: #d4b5e9;
+  text-align: center;
+  margin: 5px;
 }
-.blocflex .menu_evenement .menu .menu-item a:hover {
-  background-color: #9265af;
-  color: whitesmoke;
+.blocflex .menu_evenement .menu .menu-item a .menu-thumbnail {
+  width: 60%;
+  align-self: center;
+  margin: 5px;
 }
 
 .img__archive {
