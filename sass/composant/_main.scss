@@ -4,14 +4,20 @@ html {
 
 article {
    padding: 3rem;
-   background-color: #EED8C8;
+   background-color: #eed8c8ef;
    margin: 2rem auto;
    border-radius: 5px;
    box-shadow: 5px 5px 10px #8f654982;
+   transition: all 200ms ease-in-out;
+}
+
+article:hover {
+    background-color: #f6e3d5;
+    border: #632d87 solid 2px;
 }
 
 article a {
-    color: #663187;
+    color: #1d062c;
     font-size: 1.2rem;
     // Téléphone
     @media screen and (max-width:576px) {

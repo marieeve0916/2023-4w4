@@ -10,8 +10,8 @@
         }
         .menu {
             display : flex;
-            justify-content: space-between;
-            flex-wrap : nowrap;
+            justify-content: space-around;
+            flex-wrap : wrap;
             width: 90vw;
             margin: 0 auto;
             // Tablette
@@ -19,6 +19,7 @@
                 width: 95vw;
                 margin: 0 auto;
                 flex-direction: column;
+                flex-wrap: wrap;
                 height: 750px;
             }
             // Téléphone
@@ -39,10 +40,16 @@
                 height: 0;
             }
 
+            .menu-item:hover {
+                background-color: #754496;
+                scale: 105%;
+                cursor: pointer;
+            }
+
             .menu-item {
                 padding: 2.4rem;
                 // background-color: #EED8C8;
-                background-color: #633482;
+                background-color: #653486ee;
                 margin: 2rem auto;
                 border-radius: 5px;
                 box-shadow: 5px 5px 10px #5b21813e;
@@ -51,11 +58,12 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                transition: all 200ms ease-in-out;
                 // Tablette
                 @media screen and (min-width:577px) and (max-width:992px) {
-                    width: 70vw;
+                    width: 30%;
                     margin: 0 auto;
-                    height: 150px;
+                    height: 200px;
                 }
                 // Téléphone
                 @media screen and (max-width:576px) {
@@ -101,20 +109,13 @@
                         width: 60%;
                         align-self: center;
                         margin: 5px;
+                        // Téléphone
+                        @media screen and (max-width:576px) {
+                            width: 30%;
+                        }
                     }
                 }
             }
         }
     }
-}
-
-.img__archive {
-    width: 80%;
-    height: 50px;
-    object-fit: cover;
-    background-repeat: no-repeat;
-}
-
-.archive__cours .img__archive {
-    background-image: url("https://s2.svgbox.net/materialui.svg?ic=school");
 }

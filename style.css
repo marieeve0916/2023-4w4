@@ -616,14 +616,20 @@ html {
 
 article {
   padding: 3rem;
-  background-color: #EED8C8;
+  background-color: rgba(238, 216, 200, 0.937254902);
   margin: 2rem auto;
   border-radius: 5px;
   box-shadow: 5px 5px 10px rgba(143, 101, 73, 0.5098039216);
+  transition: all 200ms ease-in-out;
+}
+
+article:hover {
+  background-color: #f6e3d5;
+  border: #632d87 solid 2px;
 }
 
 article a {
-  color: #663187;
+  color: #1d062c;
   font-size: 1.2rem;
 }
 @media screen and (max-width: 576px) {
@@ -733,8 +739,7 @@ h3 {
   transition: all ease-in-out 200ms;
 }
 .blocflex__article a:hover {
-  background-color: #9265af;
-  color: whitesmoke;
+  color: #8045a5;
 }
 
 .blocflex__galerie {
@@ -1060,8 +1065,8 @@ body {
 }
 .blocflex .menu_evenement .menu {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
+  justify-content: space-around;
+  flex-wrap: wrap;
   width: 90vw;
   margin: 0 auto;
 }
@@ -1070,6 +1075,7 @@ body {
     width: 95vw;
     margin: 0 auto;
     flex-direction: column;
+    flex-wrap: wrap;
     height: 750px;
   }
 }
@@ -1090,9 +1096,14 @@ body {
   width: 0;
   height: 0;
 }
+.blocflex .menu_evenement .menu .menu-item:hover {
+  background-color: #754496;
+  scale: 105%;
+  cursor: pointer;
+}
 .blocflex .menu_evenement .menu .menu-item {
   padding: 2.4rem;
-  background-color: #633482;
+  background-color: rgba(101, 52, 134, 0.9333333333);
   margin: 2rem auto;
   border-radius: 5px;
   box-shadow: 5px 5px 10px rgba(91, 33, 129, 0.2431372549);
@@ -1101,12 +1112,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: all 200ms ease-in-out;
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
   .blocflex .menu_evenement .menu .menu-item {
-    width: 70vw;
+    width: 30%;
     margin: 0 auto;
-    height: 150px;
+    height: 200px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1155,16 +1167,10 @@ body {
   align-self: center;
   margin: 5px;
 }
-
-.img__archive {
-  width: 80%;
-  height: 50px;
-  object-fit: cover;
-  background-repeat: no-repeat;
-}
-
-.archive__cours .img__archive {
-  background-image: url("https://s2.svgbox.net/materialui.svg?ic=school");
+@media screen and (max-width: 576px) {
+  .blocflex .menu_evenement .menu .menu-item a .menu-thumbnail {
+    width: 30%;
+  }
 }
 
 @media screen and (max-width: 576px) {
