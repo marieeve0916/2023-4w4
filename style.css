@@ -1048,6 +1048,16 @@ body {
   font-size: 1.2rem;
 }
 
+@media screen and (max-width: 576px) {
+  .blocflex .menu_evenement {
+    margin-top: 2rem;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .blocflex .menu_evenement {
+    margin-top: 2rem;
+  }
+}
 .blocflex .menu_evenement .menu {
   display: flex;
   justify-content: space-between;
@@ -1057,14 +1067,18 @@ body {
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
   .blocflex .menu_evenement .menu {
-    width: 90vw;
+    width: 95vw;
     margin: 0 auto;
+    flex-direction: column;
+    height: 750px;
   }
 }
 @media screen and (max-width: 576px) {
   .blocflex .menu_evenement .menu {
     width: 95vw;
     margin: 0 auto;
+    flex-direction: column;
+    height: 750px;
   }
 }
 .blocflex .menu_evenement .menu li::before {
@@ -1088,6 +1102,21 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .blocflex .menu_evenement .menu .menu-item {
+    width: 70vw;
+    margin: 0 auto;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .blocflex .menu_evenement .menu .menu-item {
+    width: 80vw;
+    margin: 0 auto;
+    height: 150px;
+    padding: 2rem;
+  }
+}
 .blocflex .menu_evenement .menu .menu-item a {
   text-decoration: none;
   border-radius: 50px;
@@ -1105,6 +1134,16 @@ body {
   font-size: 1.5rem;
   margin: 5px;
 }
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .blocflex .menu_evenement .menu .menu-item a .title {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .blocflex .menu_evenement .menu .menu-item a .title {
+    font-size: 1rem;
+  }
+}
 .blocflex .menu_evenement .menu .menu-item a .description {
   padding: 5px;
   color: #d4b5e9;
@@ -1112,6 +1151,125 @@ body {
   margin: 5px;
 }
 .blocflex .menu_evenement .menu .menu-item a .menu-thumbnail {
+  width: 60%;
+  align-self: center;
+  margin: 5px;
+}
+
+.img__archive {
+  width: 80%;
+  height: 50px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.archive__cours .img__archive {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=school");
+}
+
+@media screen and (max-width: 576px) {
+  .blocflex .menu_bloc_archives {
+    margin-top: 2rem;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .blocflex .menu_bloc_archives {
+    margin-top: 2rem;
+  }
+}
+.blocflex .menu_bloc_archives .menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 90vw;
+  margin: 0 auto;
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .blocflex .menu_bloc_archives .menu {
+    width: 95vw;
+    margin: 0 auto;
+    flex-direction: column;
+    height: 750px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .blocflex .menu_bloc_archives .menu {
+    width: 95vw;
+    margin: 0 auto;
+    flex-direction: column;
+    height: 750px;
+  }
+}
+.blocflex .menu_bloc_archives .menu li::before {
+  content: "";
+  background: transparent;
+  border-radius: 0;
+  padding-inline: 0;
+  margin-inline-end: 0;
+  width: 0;
+  height: 0;
+}
+.blocflex .menu_bloc_archives .menu .menu-item {
+  padding: 2.4rem;
+  background-color: #633482;
+  margin: 2rem auto;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(91, 33, 129, 0.2431372549);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .blocflex .menu_bloc_archives .menu .menu-item {
+    width: 70vw;
+    margin: 0 auto;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .blocflex .menu_bloc_archives .menu .menu-item {
+    width: 80vw;
+    margin: 0 auto;
+    height: 150px;
+    padding: 2rem;
+  }
+}
+.blocflex .menu_bloc_archives .menu .menu-item a {
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all ease-in-out 200ms;
+  width: 95%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.blocflex .menu_bloc_archives .menu .menu-item a .title {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 5px;
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .blocflex .menu_bloc_archives .menu .menu-item a .title {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .blocflex .menu_bloc_archives .menu .menu-item a .title {
+    font-size: 1rem;
+  }
+}
+.blocflex .menu_bloc_archives .menu .menu-item a .description {
+  padding: 5px;
+  color: #d4b5e9;
+  text-align: center;
+  margin: 5px;
+}
+.blocflex .menu_bloc_archives .menu .menu-item a .menu-thumbnail {
   width: 60%;
   align-self: center;
   margin: 5px;

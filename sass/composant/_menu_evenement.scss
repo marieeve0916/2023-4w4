@@ -1,5 +1,13 @@
 .blocflex {
     .menu_evenement {
+        // Téléphone
+        @media screen and (max-width:576px) {
+            margin-top: 2rem;
+        }
+        // Tablette
+        @media screen and (min-width:577px) and (max-width:992px) {
+            margin-top: 2rem;
+        }
         .menu {
             display : flex;
             justify-content: space-between;
@@ -8,13 +16,17 @@
             margin: 0 auto;
             // Tablette
             @media screen and (min-width:577px) and (max-width:992px) {
-                width: 90vw;
+                width: 95vw;
                 margin: 0 auto;
+                flex-direction: column;
+                height: 750px;
             }
             // Téléphone
             @media screen and (max-width:576px) {
                 width: 95vw;
                 margin: 0 auto;
+                flex-direction: column;
+                height: 750px;
             }
   
             li::before {
@@ -39,6 +51,19 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                // Tablette
+                @media screen and (min-width:577px) and (max-width:992px) {
+                    width: 70vw;
+                    margin: 0 auto;
+                    height: 150px;
+                }
+                // Téléphone
+                @media screen and (max-width:576px) {
+                    width: 80vw;
+                    margin: 0 auto;
+                    height: 150px;
+                    padding: 2rem;
+                }
             
                 a {
                     text-decoration: none;
@@ -56,6 +81,13 @@
                         text-align: center;
                         font-size: 1.5rem;
                         margin: 5px;
+                        @media screen and (min-width:577px) and (max-width:992px) {
+                            font-size: 1.2rem;
+                        }
+                        // Téléphone
+                        @media screen and (max-width:576px) {
+                            font-size: 1rem;
+                        }
                     }
     
                     .description {

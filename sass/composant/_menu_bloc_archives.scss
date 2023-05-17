@@ -1,0 +1,121 @@
+.blocflex {
+    .menu_bloc_archives {
+        // Téléphone
+        @media screen and (max-width:576px) {
+           margin-top: 2rem;
+       }
+       // Tablette
+       @media screen and (min-width:577px) and (max-width:992px) {
+           margin-top: 2rem;
+       }
+       .menu {
+           display : flex;
+           justify-content: space-between;
+           flex-wrap : nowrap;
+           width: 90vw;
+           margin: 0 auto;
+           // Tablette
+           @media screen and (min-width:577px) and (max-width:992px) {
+               width: 95vw;
+               margin: 0 auto;
+               flex-direction: column;
+               height: 750px;
+           }
+           // Téléphone
+           @media screen and (max-width:576px) {
+               width: 95vw;
+               margin: 0 auto;
+               flex-direction: column;
+               height: 750px;
+           }
+   
+           li::before {
+               content: "";
+               background:transparent;
+               border-radius: 0;
+               padding-inline: 0;
+               margin-inline-end: 0;
+               width: 0;
+               height: 0;
+           }
+   
+           .menu-item {
+               padding: 2.4rem;
+               // background-color: #EED8C8;
+               background-color: #633482;
+               margin: 2rem auto;
+               border-radius: 5px;
+               box-shadow: 5px 5px 10px #5b21813e;
+               width: 300px;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               // Tablette
+               @media screen and (min-width:577px) and (max-width:992px) {
+                   width: 70vw;
+                   margin: 0 auto;
+                   height: 150px;
+               }
+               // Téléphone
+               @media screen and (max-width:576px) {
+                   width: 80vw;
+                   margin: 0 auto;
+                   height: 150px;
+                   padding: 2rem;
+               }
+           
+               a {
+                   text-decoration: none;
+                   border-radius: 50px;
+                   transition: all ease-in-out 200ms;
+                   width: 95%;
+                   text-align: center;
+                   display: flex;
+                   flex-direction: column;
+   
+                   .title {
+                       text-transform: uppercase;
+                       font-weight: 700;
+                       color: whitesmoke;
+                       text-align: center;
+                       font-size: 1.5rem;
+                       margin: 5px;
+                       @media screen and (min-width:577px) and (max-width:992px) {
+                           font-size: 1.2rem;
+                       }
+                       // Téléphone
+                       @media screen and (max-width:576px) {
+                           font-size: 1rem;
+                       }
+                   }
+   
+                   .description {
+                       padding: 5px;
+                       color: #d4b5e9;
+                       text-align: center;
+                       margin: 5px;
+                   }
+   
+                   .menu-thumbnail {
+                       width: 60%;
+                       align-self: center;
+                       margin: 5px;
+                   }
+               }
+           }
+       }
+   }
+}
+
+
+.img__archive {
+    width: 80%;
+    height: 50px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.archive__cours .img__archive {
+    background-image: url("https://s2.svgbox.net/materialui.svg?ic=school");
+}
