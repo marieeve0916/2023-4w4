@@ -800,6 +800,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #EED8C8;
 }
 .site__footer .lien {
   display: flex;
@@ -815,6 +816,12 @@ h3 {
 }
 .site__footer .lien:first-of-type {
   margin-left: 3rem;
+}
+.site__footer .video__footer {
+  width: 60%;
+}
+.site__footer .boutons__footer {
+  padding: 0.5rem;
 }
 
 .menu-cours-container .menu {
@@ -844,10 +851,12 @@ h3 {
 .menu-cours-container .menu .menu-item a {
   font-size: 1.2rem;
   text-decoration: none;
+  text-align: justify;
+  margin: 1.4rem;
 }
 @media screen and (max-width: 992px) {
   .menu-cours-container .menu .menu-item a {
-    padding: 2rem;
+    margin: 2rem;
   }
 }
 .menu-cours-container .menu .menu-item a code {
@@ -880,7 +889,7 @@ h3 {
 
 .menu-menu-4w4-container .menu {
   background-color: #9265af;
-  padding: 2rem;
+  padding: 1rem;
   color: whitesmoke;
   border-radius: 5px;
   width: 100%;
@@ -907,17 +916,14 @@ h3 {
   text-decoration: none;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 5px;
+  padding: 2px;
   border-radius: 50px;
   transition: all ease-in-out 200ms;
-}
-@media screen and (max-width: 992px) {
-  .menu-menu-4w4-container .menu .menu-item a {
-    padding: 2rem;
-  }
+  margin: 1.4rem;
 }
 .menu-menu-4w4-container .menu .menu-item a:hover {
   background-color: #b287ce;
+  scale: 103%;
 }
 
 body {
@@ -1311,6 +1317,12 @@ body {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=bookmark");
 }
 
+.site__main .site__evenement {
+  background-color: rgba(238, 216, 200, 0.937254902);
+  width: 400px;
+  display: flex;
+}
+
 /* --------------------------------------------- Layout */
 .site {
   width: 100vw;
@@ -1338,7 +1350,6 @@ body {
 
 .site__footer {
   grid-area: footer;
-  background-color: #9265af;
 }
 
 .site__aside {

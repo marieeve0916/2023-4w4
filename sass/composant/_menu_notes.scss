@@ -1,7 +1,7 @@
 .menu-menu-4w4-container{
     .menu{
         background-color: #9265af;
-        padding: 2rem;
+        padding: 1rem;
         color: whitesmoke;
         border-radius: 5px;
         width: 100%;
@@ -27,17 +27,15 @@
                 text-decoration: none;
                 color: white;
                 font-family: Arial, Helvetica, sans-serif;
-                padding: 5px;
+                padding: 2px;
                 border-radius: 50px;
                 transition: all ease-in-out 200ms;
-                // Ordinateur
-                @media screen and (max-width:992px) {
-                    padding: 2rem;
-                }
+                margin: 1.4rem;
             } 
 
             a:hover {
                 background-color: #b287ce;
+                scale: 103%;
             }
         }   
     } 
