@@ -18,15 +18,15 @@
            @media screen and (min-width:577px) and (max-width:992px) {
                width: 95vw;
                margin: 0 auto;
-               flex-direction: column;
-               height: 750px;
+               flex-direction: row;
+               height: 200px;
            }
            // Téléphone
            @media screen and (max-width:576px) {
-               width: 95vw;
+               width: 80vw;
                margin: 0 auto;
                flex-direction: column;
-               height: 750px;
+               height: 450px;
            }
    
            li::before {
@@ -46,7 +46,7 @@
             }
 
            .menu-item {
-               padding: 2.4rem;
+               padding: 1.2rem;
                background-color: #b57ddbeb;
                margin: 2rem auto;
                border-radius: 5px;
@@ -54,20 +54,22 @@
                width: 300px;
                display: flex;
                flex-direction: column;
-               justify-content: center;
+               justify-content: space-around;
                align-items: center;
                transition: all 200ms ease-in-out;
+               height: 140px;
                // Tablette
                @media screen and (min-width:577px) and (max-width:992px) {
-                   width: 70vw;
+                   width: 40%;
                    margin: 0 auto;
-                   height: 150px;
+                   height: 140px;
+                   
                }
                // Téléphone
                @media screen and (max-width:576px) {
-                   width: 80vw;
+                   width: 70%;
                    margin: 0 auto;
-                   height: 150px;
+                   height: 140px;
                    padding: 2rem;
                }
            
@@ -79,6 +81,8 @@
                    text-align: center;
                    display: flex;
                    flex-direction: column;
+                   justify-content: space-around;
+                   height: 100%;
    
                    .title {
                        text-transform: uppercase;
@@ -101,6 +105,9 @@
                        color: #471965;
                        text-align: center;
                        margin: 5px;
+                       padding-bottom: 10px;
+                       position: relative;
+                       bottom: 18px;
                    }
    
                    .menu-thumbnail {
@@ -116,13 +123,13 @@
 
 
 .img__archive {
-    width: 100px;
-    height: 100px;
+    width: 25px;
+    height: 25px;
     object-fit: cover;
     background-repeat: no-repeat;
     display: flex;
     align-self: center;
-    margin: 0 auto;
+    scale: 400%;
 }
 
 .archive__cours .img__archive {

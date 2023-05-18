@@ -27,6 +27,9 @@
                 <?php if (in_category('galerie')) {
                     get_template_part('template-parts/categorie', 'galerie');
                 } else {
+                ?> 
+                    <h1>Nos nouveautés</h1> 
+                <?php
                     get_template_part('template-parts/categorie', '4w4');
                 }?> 
                 <?php endwhile; ?>

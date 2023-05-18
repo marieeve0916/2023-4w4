@@ -56,7 +56,7 @@ function cidweb_modifie_requete_principal( $query ) {
     if ( $query->is_home() //si page d'accueil
          && $query->is_main_query() //si requete principale
          && ! is_admin() ) { //si pas dans tableau bord
-      $query->set( 'category_name', '4w4' ); //filtre les articles de categorie note4w4
+      $query->set( 'category_name', 'nouveautes' ); //filtre les articles de categorie nouveautés
       $query->set( 'orderby', 'title' );//trier selon le champ title
       $query->set( 'order', 'ASC' ); //trier en ordre ascendant
       }

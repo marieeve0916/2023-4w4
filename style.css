@@ -1194,16 +1194,16 @@ body {
   .blocflex .menu_bloc_archives .menu {
     width: 95vw;
     margin: 0 auto;
-    flex-direction: column;
-    height: 750px;
+    flex-direction: row;
+    height: 200px;
   }
 }
 @media screen and (max-width: 576px) {
   .blocflex .menu_bloc_archives .menu {
-    width: 95vw;
+    width: 80vw;
     margin: 0 auto;
     flex-direction: column;
-    height: 750px;
+    height: 450px;
   }
 }
 .blocflex .menu_bloc_archives .menu li::before {
@@ -1221,7 +1221,7 @@ body {
   cursor: pointer;
 }
 .blocflex .menu_bloc_archives .menu .menu-item {
-  padding: 2.4rem;
+  padding: 1.2rem;
   background-color: rgba(181, 125, 219, 0.9215686275);
   margin: 2rem auto;
   border-radius: 5px;
@@ -1229,22 +1229,23 @@ body {
   width: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   transition: all 200ms ease-in-out;
+  height: 140px;
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
   .blocflex .menu_bloc_archives .menu .menu-item {
-    width: 70vw;
+    width: 40%;
     margin: 0 auto;
-    height: 150px;
+    height: 140px;
   }
 }
 @media screen and (max-width: 576px) {
   .blocflex .menu_bloc_archives .menu .menu-item {
-    width: 80vw;
+    width: 70%;
     margin: 0 auto;
-    height: 150px;
+    height: 140px;
     padding: 2rem;
   }
 }
@@ -1256,6 +1257,8 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
 }
 .blocflex .menu_bloc_archives .menu .menu-item a .title {
   text-transform: uppercase;
@@ -1280,6 +1283,9 @@ body {
   color: #471965;
   text-align: center;
   margin: 5px;
+  padding-bottom: 10px;
+  position: relative;
+  bottom: 18px;
 }
 .blocflex .menu_bloc_archives .menu .menu-item a .menu-thumbnail {
   width: 60%;
@@ -1288,13 +1294,13 @@ body {
 }
 
 .img__archive {
-  width: 100px;
-  height: 100px;
+  width: 25px;
+  height: 25px;
   object-fit: cover;
   background-repeat: no-repeat;
   display: flex;
   align-self: center;
-  margin: 0 auto;
+  scale: 400%;
 }
 
 .archive__cours .img__archive {
