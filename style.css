@@ -913,10 +913,9 @@ h3 {
   text-decoration: none;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 2px;
+  padding: 10px;
   border-radius: 50px;
   transition: all ease-in-out 200ms;
-  padding: 2rem;
   text-align: justify;
 }
 .menu-menu-4w4-container .menu .menu-item a:hover {
@@ -1315,7 +1314,7 @@ body {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=bookmark");
 }
 
-main .site__evenement {
+.site main .site__evenement {
   background-color: rgba(238, 216, 200, 0.937254902);
   width: 400px;
   display: flex;
