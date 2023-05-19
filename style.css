@@ -616,7 +616,7 @@ html {
 
 article {
   padding: 3rem;
-  background-color: rgba(238, 216, 200, 0.937254902);
+  background-color: rgba(238, 216, 200, 0.8392156863);
   margin: 2rem auto;
   border-radius: 5px;
   box-shadow: 5px 5px 10px rgba(143, 101, 73, 0.5098039216);
@@ -798,30 +798,28 @@ h3 {
 
 .site__footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: #EED8C8;
+  padding: 3.4rem;
 }
-.site__footer .lien {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+@media screen and (max-width: 576px) {
+  .site__footer {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
 }
-.site__footer .lien a {
-  color: white;
-  font-display: to-upper-case;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
+.site__footer .footer__col {
+  width: 50%;
+}
+.site__footer .footer__col .sidebar div .wp-block-buttons .wp-block-button {
+  margin: 0 auto;
+}
+.site__footer .footer__col .sidebar div .wp-block-buttons .wp-block-button .wp-block-button__link {
   padding: 1rem;
-}
-.site__footer .lien:first-of-type {
-  margin-left: 3rem;
-}
-.site__footer .video__footer {
-  width: 60%;
-}
-.site__footer .boutons__footer {
-  padding: 0.5rem;
+  background-color: #8149a6;
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .menu-cours-container .menu {
@@ -851,7 +849,6 @@ h3 {
 .menu-cours-container .menu .menu-item a {
   font-size: 1.2rem;
   text-decoration: none;
-  text-align: justify;
   margin: 1.4rem;
 }
 @media screen and (max-width: 992px) {
@@ -919,7 +916,8 @@ h3 {
   padding: 2px;
   border-radius: 50px;
   transition: all ease-in-out 200ms;
-  margin: 1.4rem;
+  padding: 2rem;
+  text-align: justify;
 }
 .menu-menu-4w4-container .menu .menu-item a:hover {
   background-color: #b287ce;
@@ -1109,7 +1107,7 @@ body {
 }
 .blocflex .menu_evenement .menu .menu-item {
   padding: 2.4rem;
-  background-color: rgba(101, 52, 134, 0.9333333333);
+  background-color: rgba(101, 52, 134, 0.8666666667);
   margin: 2rem auto;
   border-radius: 5px;
   box-shadow: 5px 5px 10px rgba(91, 33, 129, 0.2431372549);
@@ -1317,7 +1315,7 @@ body {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=bookmark");
 }
 
-.site__main .site__evenement {
+main .site__evenement {
   background-color: rgba(238, 216, 200, 0.937254902);
   width: 400px;
   display: flex;

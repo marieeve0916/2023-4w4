@@ -9,7 +9,7 @@
             <?php dynamic_sidebar( 'footer2' ); ?>
         </div>
     </section>   
-    <section> 
+    <section class="footer__col"> 
         <div class="sidebar">
             <?php dynamic_sidebar( 'footer3' ); ?>
         </div>

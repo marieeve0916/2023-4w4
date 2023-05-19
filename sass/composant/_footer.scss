@@ -1,33 +1,37 @@
 .site__footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: #EED8C8;
+    padding: 3.4rem;
+    // Téléphone
+    @media screen and (max-width:576px) {
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
 
-    .lien {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+    .footer__col {
+        width: 50%;
 
-        a {
-            color: white;
-            font-display: to-upper-case;
-            text-decoration: none;
-            font-family: Arial, Helvetica, sans-serif;
-            padding: 1rem;
+        .sidebar {
+
+            div {
+
+                .wp-block-buttons {
+
+                    .wp-block-button {
+                        margin: 0 auto;
+
+                        .wp-block-button__link {
+                            padding: 1rem;
+                            background-color: #8149a6;
+                            margin: 10px;
+                            font-family: Arial, Helvetica, sans-serif;
+                        }
+                    }
+                }
+            }
         }
-    }
-
-    .lien:first-of-type {
-        margin-left: 3rem;
-    }
-
-    .video__footer {
-        width: 60%;
-    }
-
-    .boutons__footer {
-        padding: 0.5rem;
     }
 }
 
