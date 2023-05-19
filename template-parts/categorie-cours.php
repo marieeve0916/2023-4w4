@@ -9,12 +9,12 @@
     $duree = substr($titre, -6);
 ?>
 
-
 <article  class="blocflex__article">
     <h5><a href="<?php the_permalink(); ?>"> <?= $sigle; ?></a></h5>
     <h6><?= $titre__long; ?></h6>
     <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
     <h6><?= $duree; ?></h6>
+    <figure class="img__cours"><?php the_post_thumbnail('medium'); ?></figure>
     <p><?php the_field("enseignant") ?></p>
     <p><?php the_field("domaine") ?></p>
 </article>

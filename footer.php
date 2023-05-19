@@ -1,3 +1,4 @@
+<!-- Le footer du site -->
 <footer class="site__footer">
     <section class="footer__col"> 
         <div class="sidebar">

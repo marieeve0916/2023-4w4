@@ -1314,10 +1314,19 @@ body {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=bookmark");
 }
 
-.site main .site__evenement {
-  background-color: rgba(238, 216, 200, 0.937254902);
-  width: 400px;
+.site .site__evenement {
+  background-color: rgba(238, 216, 200, 0.862745098);
+  border-radius: 10px;
+  width: 70%;
   display: flex;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 1rem;
+}
+.site .site__evenement p {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* --------------------------------------------- Layout */

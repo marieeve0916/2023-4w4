@@ -15,9 +15,9 @@
          'orderby' => 'title',
          'order' => 'ASC'
       );
-    //   Création d'une nouvelle requête
+    // Création d'une nouvelle requête
       $query = new WP_Query( $args );
-    //   Tout le reste de l'extraction de données est basée sur la nouvelle requête
+    // Tout le reste de l'extraction de données est basée sur la nouvelle requête
       if ( $query->have_posts() ) :
          while ( $query->have_posts() ) : $query->the_post(); 
          get_template_part( 'template-parts/categorie', $category->slug);

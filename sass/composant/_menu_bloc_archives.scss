@@ -90,6 +90,7 @@
                        text-align: center;
                        font-size: 1.5rem;
                        margin: 5px;
+                        // Tablette
                        @media screen and (min-width:577px) and (max-width:992px) {
                            font-size: 1.2rem;
                        }
@@ -120,7 +121,7 @@
    }
 }
 
-
+// Icônes
 .img__archive {
     width: 25px;
     height: 25px;

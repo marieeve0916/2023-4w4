@@ -1,7 +1,18 @@
+// Template pour un événement 
 .site {
-    main .site__evenement {
-        background-color: #eed8c8ef;
-        width: 400px;
+    .site__evenement {
+        background-color: #eed8c8dc;
+        border-radius: 10px;
+        width: 70%;
         display: flex;
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        padding: 1rem;
+
+        p {
+            font-size: 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
     }
 }
