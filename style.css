@@ -1331,12 +1331,16 @@ body {
 
 .site__aside {
   background-color: #9265af;
-  margin-top: 5rem;
-  height: 800px;
+  margin-top: 2rem;
+  height: 405px;
+  border-radius: 5px;
+  width: 305px;
+  padding: 1.2rem;
 }
 
 .site__atelier {
-  width: 70%;
+  width: 60%;
+  margin-left: 200px;
 }
 
 .img__atelier {
@@ -1346,6 +1350,122 @@ body {
 
 .menu_ateliers {
   margin-top: 200px;
+}
+
+@media screen and (max-width: 576px) {
+  .menu_ateliers {
+    margin-top: 2rem;
+    height: 1220px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .menu_ateliers {
+    margin-top: 2rem;
+    height: 1120px;
+  }
+}
+.menu_ateliers .menu {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 90vw;
+  margin: 0 auto;
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .menu_ateliers .menu {
+    width: 95vw;
+    margin: 0 auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 1090px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .menu_ateliers .menu {
+    width: 95vw;
+    margin: 0 auto;
+    flex-direction: column;
+    height: 1200px;
+  }
+}
+.menu_ateliers .menu li::before {
+  content: "";
+  background: transparent;
+  border-radius: 0;
+  padding-inline: 0;
+  margin-inline-end: 0;
+  width: 0;
+  height: 0;
+}
+.menu_ateliers .menu .menu-item:hover {
+  background-color: #754496;
+  scale: 105%;
+  cursor: pointer;
+}
+.menu_ateliers .menu .menu-item {
+  padding: 2.4rem;
+  background-color: rgba(101, 52, 134, 0.8666666667);
+  margin: 2rem auto;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(91, 33, 129, 0.2431372549);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 200ms ease-in-out;
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .menu_ateliers .menu .menu-item {
+    width: 30%;
+    margin: 0 auto;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .menu_ateliers .menu .menu-item {
+    width: 80vw;
+    margin: 0 auto;
+    height: 150px;
+    padding: 2rem;
+  }
+}
+.menu_ateliers .menu .menu-item a {
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all ease-in-out 200ms;
+  width: 95%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.menu_ateliers .menu .menu-item a .title {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 5px;
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .menu_ateliers .menu .menu-item a .title {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .menu_ateliers .menu .menu-item a .title {
+    font-size: 1rem;
+  }
+}
+.menu_ateliers .menu .menu-item a .menu-thumbnail {
+  width: 60%;
+  align-self: center;
+  margin: 5px;
+}
+@media screen and (max-width: 576px) {
+  .menu_ateliers .menu .menu-item a .menu-thumbnail {
+    width: 30%;
+  }
 }
 
 /* --------------------------------------------- Layout */
