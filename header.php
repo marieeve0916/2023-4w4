@@ -15,7 +15,7 @@
         $nouvelle_classe = "";
         if  (is_front_page() || 
             (! in_category("cours") && ! in_category("4w4")) ){
-              $nouvelle_classe = 'no-aside';
+              $nouvelle_classe = 'no__aside';
             }
         if (is_page_template('template-atelier.php')) {
              $nouvelle_classe = '';

@@ -1329,6 +1329,25 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.site__aside {
+  background-color: #9265af;
+  margin-top: 5rem;
+  height: 800px;
+}
+
+.site__atelier {
+  width: 70%;
+}
+
+.img__atelier {
+  position: absolute;
+  bottom: 30rem;
+}
+
+.menu_ateliers {
+  margin-top: 200px;
+}
+
 /* --------------------------------------------- Layout */
 .site {
   width: 100vw;
