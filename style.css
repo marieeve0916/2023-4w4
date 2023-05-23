@@ -1332,15 +1332,50 @@ body {
 .site__aside {
   background-color: #9265af;
   margin-top: 2rem;
-  height: 405px;
+  height: auto;
   border-radius: 5px;
   width: 305px;
   padding: 1.2rem;
+}
+@media screen and (max-width: 576px) {
+  .site__aside {
+    margin-top: -3rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .site__aside {
+    margin-top: -3rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+.site__aside .menu-ateliers-container .menu .menu-item a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding-top: 0.8rem;
+  transition: all 150ms ease-in-out;
+}
+.site__aside .menu-ateliers-container .menu .menu-item a:hover {
+  color: #c8a3e1;
+  cursor: pointer;
 }
 
 .site__atelier {
   width: 60%;
   margin-left: 200px;
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .site__atelier {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .site__atelier {
+    margin: 0 auto;
+  }
 }
 
 .img__atelier {
@@ -1350,6 +1385,24 @@ body {
 
 .menu_ateliers {
   margin-top: 200px;
+}
+
+.informations {
+  text-align: left;
+}
+
+p {
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 576px) {
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+table {
+  width: 500px;
 }
 
 @media screen and (max-width: 576px) {

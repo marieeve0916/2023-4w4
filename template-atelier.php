@@ -9,11 +9,26 @@
         if ( have_posts() ) : the_post(); ?>
         <h1 class="titre__atelier"><?= get_the_title(); ?></h1>
         <?php the_content();?>
-        <p class="formateur__atelier">Formateur <?php the_field('formateur'); ?></p>
-        <p class="date__atelier">Date <?php the_field('datedebut'); ?></p> 
-        <p class="heure__atelier">Heure <?php the_field('heuredebut'); ?></p> 
-        <p class="duree__atelier">Durée <?php the_field('duree'); ?></p>
-        <p class="local__atelier">Local <?php the_field('local'); ?></p>   
+            <table>
+                <tr>
+                    <td>
+                        <p class="informations formateur__atelier">Formateur: </p>
+                        <p class="informations date__atelier">Date: </p>
+                        <p class="informations heure__atelier">Heure: </p>
+                        <p class="informations duree__atelier">Durée: </p>
+                        <p class="informations local__atelier">Local: </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><?php the_field('formateur'); ?></p>
+                        <p><?php the_field('datedebut'); ?></p> 
+                        <p><?php the_field('heuredebut'); ?></p> 
+                        <p><?php the_field('duree'); ?></p>
+                        <p><?php the_field('local'); ?></p>  
+                    </td>
+                </tr>
+            </table> 
         <?php endif;?>
     </main><!-- #main -->
     <?php
