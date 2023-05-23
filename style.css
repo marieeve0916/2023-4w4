@@ -1402,7 +1402,16 @@ p {
 }
 
 table {
-  width: 500px;
+  width: 650px;
+  background-color: #9265af;
+  padding: 1rem;
+  border-radius: 5px;
+}
+table tr {
+  font-weight: bold;
+}
+table td {
+  background-color: #c8a3e1;
 }
 
 @media screen and (max-width: 576px) {

@@ -75,5 +75,16 @@ p {
 }
 
 table {
-    width: 500px;
+    width: 650px;
+    background-color: #9265af;
+    padding: 1rem;
+    border-radius: 5px;
+
+    tr {
+        font-weight: bold;
+    }
+
+    td {
+        background-color: #c8a3e1;
+    }
 }
