@@ -17,5 +17,6 @@
         <?php endif;?>
     </main><!-- #main -->
     <?php
+    // inclure le aside ici
     get_footer();
 ?>

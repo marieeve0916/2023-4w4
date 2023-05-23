@@ -18,6 +18,12 @@
                             "container_class" => "menu_bloc_archives"
                         )); 
             ?>
+            <?php  wp_nav_menu(array( 
+                            "menu" => "ateliers",
+                            "container" => "nav",
+                            "container_class" => "menu_ateliers"
+                        )); 
+            ?>
             <?php if(have_posts()):
                 while (have_posts()): the_post(); ?>
                 <?php if (in_category('galerie')) {

@@ -9,7 +9,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <?php wp_head() ?>
 </head>
-<body class="site custom-background <?php echo(is_front_page() || is_404() ? "no__aside" : "");?>" >
+<body class="site custom-background 
+    <?php 
+        echo(is_front_page() || is_404() ? "no__aside" : "");
+        $nouvelle_classe = "";
+        if  (is_front_page() || 
+            (! in_category("cours") && ! in_category("4w4")) ){
+              $nouvelle_classe = 'no-aside';
+            }
+        if (is_page_template('template-atelier.php')) {
+             $nouvelle_classe = '';
+        }      
+    ?>" >
     <header class="site__entete">
         <div class="site__entete__haut">
             <div class="logo__site">
